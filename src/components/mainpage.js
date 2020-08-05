@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-
+import { Container } from 'react-bootstrap';
 
 class Mainpage extends Component {
     constructor() {
         super();
     this.state = { items: [
         {
-          title: "Bronze commoners' axe",
+          title: "This is our shop",
           imageUrl: '/images/outside.jpg',
           
-          desc: "An simple axe made from a single piece of wood with a bronze blade attached."
+          desc: "This picture is ass quality by the way."
         },
         {
           title: "Bronze Noblemens' axe",
@@ -48,8 +48,8 @@ class Mainpage extends Component {
         {
              
              this.state.items.map(({title, imageUrl, desc }) => (
-              <div> <h1 className="mainpagetitle">{title}</h1> <img alt={title} className="mainpageimage" src={imageUrl}></img> <p className="mainpagesubtitle">{desc} </p>
-                  </div>
+              <Container className="mainpageitem"> <h1 className="mainpagetitle">{title}</h1> <img alt={title} className="mainpageimage" src={imageUrl}></img> <p className="mainpagesubtitle">{desc} </p>
+                  </Container>
         ))}
             </div> 
             

@@ -1,4 +1,7 @@
-* {
+body {
+  background-color: #818181;
+}
+.App {
   background-color: #818181;
   color: #cc0000;
   max-width: 100%;
@@ -14,12 +17,15 @@
 }
 
 /* main page items */ 
+.mainpageitem {
+  
+}
 .mainpagetitle{
  color: white
 }
 .mainpageimage {
-width: 60%;
-height: 40%;
+width: 35vw;
+height: 55vh;
 }
 .mainpagesubtitle {
 color: white;
