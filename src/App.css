@@ -6,30 +6,31 @@ body {
   color: #cc0000;
   max-width: 100%;
   overflow: none;
-  
 }
 
-.subtext{
- color: #fafafa
+.subtext {
+  color: #fafafa;
 }
 .maintitle {
   text-align: center;
+  padding: -50;
 }
 
-/* main page items */ 
-.mainpageitem {
-  
+/* main page items */
+.mainpage {
+  margin-left: 15%;
+  margin-right: 15%;
 }
-.mainpagetitle{
- color: white
+.mainpagetitle {
+  color: white;
+  text-align: center;
+  font-size: 8rem;
 }
-.mainpageimage {
-width: 35vw;
-height: 55vh;
-}
+
 .mainpagesubtitle {
-color: white;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
 }
 
-
-/* end of main page */ 
+/* end of main page */

@@ -2,12 +2,13 @@ import React from 'react';
 import './App.css';
 import Mainpage from './components/mainpage';
 import { Services } from './components/services';
+import {Nav } from './components/navbar';
 
 
 function App() {
   return (
     <div className="App">
-      <h1 className="maintitle">Spokane power stroker</h1>
+      <Nav />
       <Mainpage />
         <Services />
     </div>
