@@ -1,5 +1,7 @@
 body {
   background-color: #818181;
+  max-width: 100%;
+  overflow: none;
 }
 .App {
   background-color: #818181;
@@ -7,7 +9,9 @@ body {
   max-width: 100%;
   overflow: none;
 }
-
+.navbarmaster {
+  max-width: 100%;
+}
 .subtext {
   color: #fafafa;
 }
@@ -20,11 +24,12 @@ body {
 .mainpage {
   margin-left: 15%;
   margin-right: 15%;
+  
 }
 .mainpagetitle {
   color: white;
   text-align: center;
-  font-size: 8rem;
+  font-size: 28px;
 }
 
 .mainpagesubtitle {
@@ -55,10 +60,14 @@ body {
 }
 .hero-content {
   position: relative;
+  margin-top: -5%;
 }
 .hero-title {
   text-align: center;
+  color: white;
 }
 .hero-subtitle {
   text-align: center;
+  color: white;
+  
 }

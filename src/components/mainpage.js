@@ -40,12 +40,12 @@ class Mainpage extends Component {
         return ( 
         
         <div>
-          <h1>So what do we offer?</h1>
+          <h1 className="mainpagetitle">So what do we offer?</h1>
         <div className="mainpage">
         {
              
              this.state.items.map(({title, imageUrl, desc, desc2 }) => (
-              <Card className="bg-dark text-white">
+              <Card className="bg-dark text-white" key={title}>
               <Card.Img src={imageUrl} alt="Card image"  />
               <Card.ImgOverlay>
                 <Card.Title className="mainpagetitle">{title}</Card.Title>
