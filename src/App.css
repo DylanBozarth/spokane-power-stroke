@@ -21,17 +21,14 @@ body {
 }
 
 /* main page items */
-.mainpage {
-  margin-left: 15%;
-  margin-right: 15%;
-  
-}
 .mainpagetitle {
   color: white;
   text-align: center;
   font-size: 28px;
 }
-
+.row {
+  max-width: 100%;
+}
 .mainpagesubtitle {
   color: white;
   text-align: center;
@@ -71,3 +68,5 @@ body {
   color: white;
   
 }
+
+
