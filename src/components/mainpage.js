@@ -5,12 +5,7 @@ class Mainpage extends Component {
     constructor() {
         super();
     this.state = { items: [
-        {
-          title: "This is our shop",
-          imageUrl: '/images/outside.jpg',
-          
-          desc: "This picture is ass quality by the way."
-        },
+
         {
           title: "Bronze Noblemens' axe",
           imageUrl: '/images/rotor.jpg',
@@ -45,6 +40,7 @@ class Mainpage extends Component {
         return ( 
         
         <div>
+          <h1>So what do we offer?</h1>
         <div className="mainpage">
         {
              
