@@ -1,41 +1,41 @@
 import React, { Component } from 'react';
-import {  Card, Container } from 'react-bootstrap';
+import {  Card } from 'react-bootstrap';
+
 
 class Mainpage extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
     this.state = { items: [
 
         {
           title: "Bronze Noblemens' axe",
           imageUrl: '/images/rotor.jpg',
           desc2: 'aaaaa',
-          desc: 'An ornate axe, made of bronze. .'
+          desc: 'Engine stuff'
         },
         {
           title: 'Bronze Dagger',
           imageUrl: '/images/sexyengine.jpg',
           desc2: 'aaaaa',
-          desc: 'An Egyptian style dagger from the bronze age '
+          desc: 'engine stuff '
         },
         {
           title: 'Bronze Spear Head',
           imageUrl: '/images/truckengine.jpg',
           desc2: 'aaaaa',
-          desc: 'Solid Bronze'
+          desc: 'engine stuff'
         },
         {
           title: 'Bronze Age Sword',
           imageUrl: '/images/workingman.jpg',
          
-          desc: '23 inches in length, solid bronze ',
+          desc: 'engine stuff',
           desc2: 'aaaaa'
         },
         
       ] 
     }
   }
-  
     render() { 
         return ( 
         
