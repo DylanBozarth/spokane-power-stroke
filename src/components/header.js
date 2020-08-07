@@ -10,7 +10,7 @@ export const Header = () => (
 
     <div className="hero-content">
     <h1 className="hero-title">
-            
+            Spokane Power Stroke
        </h1>
       
        <h2 className="hero-subtitle">

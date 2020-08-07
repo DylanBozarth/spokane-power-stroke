@@ -45,7 +45,6 @@ const imageVariants = {
   
   export const Gallery = () => (
     <>
-      <h1>Barbican</h1>
       <div className="gallery">
         <motion.div
           className="thumbnails"

@@ -16,7 +16,9 @@ const imageVariants = {
     transition
   }
 };
-
+const infoVariants = {
+  
+}
 const backVariants = {
   exit: { x: 100, opacity: 0, transition },
   enter: { x: 0, opacity: 1, transition: { delay: 1, ...transition } }
@@ -31,7 +33,7 @@ export const SingleImage = ({ match }) => (
       }.jpg?format=1500w`}
       alt="The Barbican"
     />
-    <motion.div className="back" variants={backVariants}>
+    <motion.div className="back" variants={backVariants}> Well lets see
       <Link to="/">← Back</Link>
     </motion.div>
   </motion.div>
