@@ -5,7 +5,7 @@ import { AnimatePresence } from "framer-motion";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Gallery } from "./components/Gallery";
 import { SingleImage } from "./components/SingleImage";
-
+import  Page1 from './components/page1'
 class App extends Component {
   constructor(props ) {
  super(props)
@@ -24,7 +24,8 @@ class App extends Component {
           <AnimatePresence exitBeforeEnter initial={false}>
             <Switch location={location} key={location.pathname}>
               <Route exact path="/" component={Gallery} />
-              <Route exact path="/image/:id" component={SingleImage} />
+              { /* <Route exact path="/image/:id" component={SingleImage} /> */}
+              <Route exact path="/image/0" component={Page1} />
             </Switch>
           </AnimatePresence>
         )}

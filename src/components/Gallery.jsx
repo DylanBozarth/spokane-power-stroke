@@ -37,7 +37,7 @@ const imageVariants = {
   
           <motion.img
             src={id}
-            alt="The Barbican"
+            alt={id}
             variants={imageVariants}
             transition={transition}
           />
