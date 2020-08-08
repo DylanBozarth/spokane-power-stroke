@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {  Jumbotron, Container } from 'react-bootstrap';
+import {  Jumbotron } from 'react-bootstrap';
 
 export const Header = () => (
     <Jumbotron fluid>

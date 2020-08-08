@@ -28,12 +28,10 @@ export const SingleImage = ({ match }) => (
   <motion.div className="single" initial="exit" animate="enter" exit="exit">
     <motion.img
       variants={imageVariants}
-      src={`https://static1.squarespace.com/static/5b475b2c50a54f54f9b4e1dc/t/${
-        images[parseInt(match.params.id, 10)]
-      }.jpg?format=1500w`}
+      src={images[parseInt(match.params.id, 10)]}
       alt="The Barbican"
     />
-    <motion.div className="back" variants={backVariants}> Well lets see
+    <motion.div className="back" variants={backVariants}> 
       <Link to="/">← Back</Link>
     </motion.div>
   </motion.div>

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Nav } from './components/navbar';
-import { Header } from './components/header';
 import { AnimatePresence } from "framer-motion";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Gallery } from "./components/Gallery";

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { images } from "./images";
 
+
+
 const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] };
 
 const thumbnailVariants = {
@@ -20,7 +22,7 @@ const frameVariants = {
 };
 
 const imageVariants = {
-    hover: { scale: 1.1 }
+    hover: { scale: 1.25 }
   };
   
   const Thumbnail = ({ id, i }) => (
@@ -33,7 +35,7 @@ const imageVariants = {
       >
         <Link to={`/image/${i}`}>
           <motion.img
-            src={`https://static1.squarespace.com/static/5b475b2c50a54f54f9b4e1dc/t/${id}.jpg?format=1500w`}
+            src={id}
             alt="The Barbican"
             variants={imageVariants}
             transition={transition}
@@ -53,6 +55,7 @@ const imageVariants = {
           exit="exit"
           variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
         >
+          
           {images.map((id, i) => (
             <Thumbnail key={id} id={id} i={i} />
           ))}
