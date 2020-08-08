@@ -29,7 +29,7 @@ export const SingleImage = ({ match }) => (
     <motion.img
       variants={imageVariants}
       src={images[parseInt(match.params.id, 10)]}
-      alt="The Barbican"
+      alt="image"
     />
     <motion.div className="back" variants={backVariants}> 
       <Link to="/">← Back</Link>

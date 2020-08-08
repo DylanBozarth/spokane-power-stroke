@@ -34,6 +34,7 @@ const imageVariants = {
         transition={transition}
       >
         <Link to={`/image/${i}`}>
+  
           <motion.img
             src={id}
             alt="The Barbican"
