@@ -18,7 +18,10 @@ body {
 }
 .maintitle {
   text-align: center;
-  padding: -50;
+ 
+}
+.navbarbox {
+  margin-left: -150px;
 }
 
 /* end of nav bar */ 
