@@ -1,20 +1,21 @@
 body {
-  background-color: #818181;
+  background-color: blue;
   max-width: 100%;
   overflow: none;
 }
 .App {
-  background-color: #818181;
-  color: #cc0000;
+  background-color: white;
+  color: blue;
   max-width: 100%;
   overflow: none;
 }
 /* nav bar */ 
 .navbarmaster {
   max-width: 100%;
+  border-bottom: blue 3px solid;
 }
 .subtext {
-  color: red;
+  color: blue;
 }
 .maintitle {
   text-align: center;
@@ -26,13 +27,26 @@ body {
 .navbaritem {
  margin-left: auto;
  margin-right: auto;
+ 
+}
+.navbarcolor {
+  color: blue;
 }
 .navbarlogo {
   margin-left: 10px;
 }
 
 /* end of nav bar */ 
-
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: blue;
+  color: black;
+  text-align: center;
+  z-index: 99;
+}
 /* start of gallery */ 
 
 
@@ -75,18 +89,20 @@ body {
 .single {
   overflow: hidden;
   height: 100vh;
-  width: 40%;
+  width: 100%;
 }
 
 .single img {
   max-width: 100%;
-  max-height: 100vh;
+  max-height: 60vh;
 }
-
+.pagetext {
+  font-size: 2rem;
+  float: right;
+  margin-right: 5%;
+}
 .back {
-  position: fixed;
-  top: 50px;
-  right: 50px;
+top: 5%;
   font-size: 54px;
   z-index: 1;
 }

@@ -30,6 +30,7 @@ export const Page1 = ({ match }) => (
       alt="image"
     />
     <motion.div className="back" variants={backVariants}> 
+    <div className="pagetext">lorem isdsdsdasdsadasd nigga</div>
       <Link to="/">← Back</Link>
     </motion.div>
   </motion.div>

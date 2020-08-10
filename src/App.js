@@ -12,6 +12,7 @@ import {Page4} from './components/pages/page4'
 import {Page5} from './components/pages/page5'
 import {Page6} from './components/pages/page6'
 import {Header} from './components/header'
+import { Footerthing } from './components/footer';
 class App extends Component {
   constructor(props ) {
  super(props)
@@ -26,6 +27,7 @@ class App extends Component {
       
         <Router>
           <Nav />
+          <Footerthing />
       <Route
         render={({ location }) => (
           <AnimatePresence exitBeforeEnter initial={false}>
@@ -38,6 +40,7 @@ class App extends Component {
               <Route exact path="/image/3" component={Page4} />
               <Route exact path="/image/4" component={Page5} />
               <Route exact path="/image/5" component={Page6} />
+              
             </Switch>
           </AnimatePresence>
         )}
