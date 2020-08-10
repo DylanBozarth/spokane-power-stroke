@@ -18,10 +18,17 @@ body {
 }
 .maintitle {
   text-align: center;
- 
+ padding: 200
 }
 .navbarbox {
   margin-left: -150px;
+}
+.navbaritem {
+ margin-left: auto;
+ margin-right: auto;
+}
+.navbarlogo {
+  margin-left: 10px;
 }
 
 /* end of nav bar */ 

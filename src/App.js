@@ -22,9 +22,10 @@ class App extends Component {
     return ( 
       <div className="App">
       
-        <Nav />
+        
       
         <Router>
+          <Nav />
       <Route
         render={({ location }) => (
           <AnimatePresence exitBeforeEnter initial={false}>
