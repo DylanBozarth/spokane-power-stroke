@@ -15,14 +15,14 @@ export const Header = () => (
       
        <h2 className="hero-subtitle">
            We need a way better quality image for sure. 
+
            <br /> 
            <br /><br /> 
            <br /><br /> 
            <br /><br /> 
            <br />
        </h2>
-         
-       
+      
     
     </div>
 

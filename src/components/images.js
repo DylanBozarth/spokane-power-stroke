@@ -4,4 +4,6 @@ export const images = [
   "./images/sexyengine.jpg",
   "./images/workingman.jpg",
   "./images/truckengine.jpg",
+  "./images/truckengine.jpg",
+  "./images/truckengine.jpg",
 ];
