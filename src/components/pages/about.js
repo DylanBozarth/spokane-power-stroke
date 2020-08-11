@@ -21,7 +21,7 @@ const imageVariants = {
 
 const backVariants = {
   exit: { x: 100, opacity: 0, transition },
-  enter: { x: 0, opacity: 1, transition: { delay: 1, ...transition } },
+  enter: { x: 0, opacity: 1, transition: { delay: .2, ...transition } },
 };
 
 export const About = ({ match }) => (
@@ -73,7 +73,7 @@ export const About = ({ match }) => (
           </Card>
         </Col>
       </Row>
-      <h1>Our certifications</h1>
+      <h1 className="centertext">Our certifications</h1>
       <Carousel className="aboutslider">
         <img src="./images/workingman.jpg" />
         <img src="./images/doge.png" />

@@ -13,8 +13,9 @@ import {Page5} from './components/pages/page5'
 import {Page6} from './components/pages/page6'
 import {Header} from './components/header'
 import { Footerthing } from './components/footer';
-import { Reviews } from './components/pages/reviews';
+import  Reviews  from './components/pages/reviews';
 import { About } from './components/pages/about';
+import { Contact } from './components/pages/contact';
 class App extends Component {
   constructor(props ) {
  super(props)
@@ -44,6 +45,7 @@ class App extends Component {
               <Route exact path="/image/5" component={Page6} />
               <Route  path="/reviews" component={Reviews} />
               <Route path="/about" component={About} />
+              <Route path="/contact" component={Contact} />
             </Switch>
           </AnimatePresence>
         )}

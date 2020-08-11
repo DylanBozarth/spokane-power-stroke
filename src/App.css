@@ -3,6 +3,7 @@ body {
   max-width: 100%;
   overflow: none;
   box-sizing: border-box;
+  overflow-x: none
 }
 .App {
   background-color: white;
@@ -10,6 +11,7 @@ body {
   max-width: 100%;
   overflow: none;
   margin-bottom: 10%;
+  overflow-x: none
 }
 /* nav bar */ 
 .navbarmaster {
@@ -21,7 +23,8 @@ body {
 }
 .maintitle {
   text-align: center;
- padding: 200
+ 
+ color: white;
 }
 .navbarbox {
   margin-left: -150px;
@@ -31,13 +34,25 @@ body {
  margin-right: auto;
  
 }
+.navbaritem:hover {
+  text-decoration: none;
+}
+.navbarcolor:hover {
+  text-decoration: none;
+}
 .navbarcolor {
-  color: #3d38ba;
+  color: white;
 }
 .navbarlogo {
   margin-left: 10px;
 }
-
+.underbar {
+  background-color: 	#4547bd;
+}
+.upperbar {
+  background-image: url('./banner.jpg');
+  width:  100%;
+}
 /* end of nav bar */ 
 .footer {
   position: fixed;
@@ -159,10 +174,15 @@ top: 5%;
 }
 .mysingle {
   
-    overflow: hidden;
+    
     height: 100%;
+    align-items: center;
     width: 100%;
   
+}
+.row {
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 

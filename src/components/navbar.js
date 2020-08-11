@@ -4,25 +4,24 @@ import { Navbar, Container } from "react-bootstrap";
 
 export const Nav = () => (
   <div className="navbarmaster">
-    <Navbar expand="lg" variant="light" bg="light">
-      <NavLink to="/">
-        <img
-          className="navbarlogo"
-          width="70"
-          height="70"
-          src="/images/logo.jpg"
-        ></img>
-        <img
-          className="navbarlogo"
-          width="100"
-          height="60"
-          src="/images/fordicon.png"
-        ></img></NavLink>
+    <Container className="upperbar">
+      <Navbar expand="lg">
+        <NavLink to="/">
+          <img
+            className="navbarlogo"
+            width="70"
+            height="70"
+            src="/images/logo.jpg"
+          ></img>
+        </NavLink>
         <h1 className="maintitle navbaritem">Spokane power stroke</h1>
+      </Navbar>
+    </Container>
+    <Container className="underbar justify-content-center" activeKey="/home">
       
-      <NavLink to="/">
+      <NavLink to="/contact">
         <Navbar.Brand className="navbaritem">
-          <p className="navbarcolor">Navbar</p>
+          <p className="navbarcolor">Contact Us</p>
         </Navbar.Brand>
       </NavLink>
       <NavLink to="/about">
@@ -35,8 +34,8 @@ export const Nav = () => (
         {" "}
         <Navbar.Brand className="navbaritem">
           <p className="navbarcolor">Reviews</p>
-        </Navbar.Brand>
+        </Navbar.Brand>{" "}
       </NavLink>
-    </Navbar>
+    </Container>
   </div>
 );
