@@ -4,38 +4,43 @@ import { Navbar, Container } from "react-bootstrap";
 
 export const Nav = () => (
   <div className="navbarmaster">
-    <Container className="upperbar">
-      <Navbar expand="lg">
+    <>
+      <Navbar className="upperbar">
         <NavLink to="/">
-          <img
-            className="navbarlogo"
-            width="70"
-            height="70"
-            src="/images/logo.jpg"
-          ></img>
+          <Navbar.Brand>
+            <img
+              alt=""
+              src="./images/logonew.png"
+              width="110"
+              height="105"
+              className="d-inline-block align-top"
+            />{" "}
+          </Navbar.Brand>
+        </NavLink>{" "}
+        <NavLink to="/">
+          <p className="maintitle">Spokane Power Stroke</p>
         </NavLink>
-        <h1 className="maintitle navbaritem">Spokane power stroke</h1>
       </Navbar>
-    </Container>
-    <Container className="underbar justify-content-center" activeKey="/home">
-      
-      <NavLink to="/contact">
-        <Navbar.Brand className="navbaritem">
-          <p className="navbarcolor">Contact Us</p>
-        </Navbar.Brand>
-      </NavLink>
-      <NavLink to="/about">
-        {" "}
-        <Navbar.Brand className="navbaritem">
-          <p className="navbarcolor">About Us</p>
-        </Navbar.Brand>
-      </NavLink>
-      <NavLink to="/reviews">
-        {" "}
-        <Navbar.Brand className="navbaritem">
-          <p className="navbarcolor">Reviews</p>
-        </Navbar.Brand>{" "}
-      </NavLink>
-    </Container>
+
+      <div className="underbar">
+        <NavLink to="/about">
+          <Navbar.Brand className="navbaritem">
+            <p className="navbarcolor">About Us</p>
+          </Navbar.Brand>
+        </NavLink>
+        <NavLink to="/reviews">
+          {" "}
+          <Navbar.Brand className="navbaritem">
+            <p className="navbarcolor">Reviews</p>
+          </Navbar.Brand>{" "}
+        </NavLink>
+        <NavLink to="/contact">
+          {" "}
+          <Navbar.Brand className="navbaritem">
+            <p className="navbarcolor">Contact Us</p>
+          </Navbar.Brand>
+        </NavLink>
+      </div>
+    </>
   </div>
 );
