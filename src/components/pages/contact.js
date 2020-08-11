@@ -1,9 +1,8 @@
 import React from "react";
-import { Container, Col, Row, Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Container } from "react-bootstrap";
 import { motion } from "framer-motion";
-import Carousel from 'nuka-carousel';
-
+import { Map, GoogleApiWrapper } from 'google-maps-react';
+import { MapContainer } from "../mapcontainer";
 
 const transition = {
   duration: 1,
@@ -33,7 +32,7 @@ export const Contact = ({ match }) => (
     variants={backVariants}
   >
     <Container>
-      aaaaa
+      <div className="mapcontainer"><MapContainer /></div>
         
          
           

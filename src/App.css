@@ -37,8 +37,9 @@ body {
  text-align: center;
  width: 45vw;
  height: 5vh;
- border-left: 1.5px solid white;
  z-index: 99;
+ text-decoration: underline;
+ text-decoration-color: white;
 }
 .navbaritem:hover {
   text-decoration: none;
@@ -78,7 +79,6 @@ align-self: auto;
 margin-left: auto;
 margin-right: auto;
 text-align: center;
-border-bottom: 1px solid white;
 }
 /* end of nav bar */ 
 .footer {

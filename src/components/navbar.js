@@ -23,8 +23,8 @@ export const Nav = () => (
       </Navbar>
       <p className="contactnumber">
         {" "}
-        555-5555
-        <br /> 20102 pitsburg street
+        509 879 0391
+        <br /> 2833 N Pittsburg St
       </p>
       <div className="underbar">
         <NavLink to="/">
