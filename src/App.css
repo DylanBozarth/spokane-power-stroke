@@ -2,6 +2,7 @@ body {
   background-color: blue;
   max-width: 100%;
   overflow: none;
+  box-sizing: border-box;
 }
 .App {
   background-color: white;
@@ -64,6 +65,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  
 }
 
 .thumbnail {
@@ -152,10 +154,21 @@ top: 5%;
   margin-left: auto;
   margin-right: auto;
 }
+.centertext {
+  text-align: center;
+}
 .mysingle {
   
     overflow: hidden;
-    height: 150vh;
+    height: 100%;
     width: 100%;
   
+}
+
+
+/* about page */ 
+
+.aboutslider {
+  margin-top: -0%;
+ 
 }

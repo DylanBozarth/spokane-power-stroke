@@ -14,8 +14,8 @@ export const Nav = () => (
         ></img>
         <img
           className="navbarlogo"
-          width="50"
-          height="80"
+          width="100"
+          height="60"
           src="/images/fordicon.png"
         ></img></NavLink>
         <h1 className="maintitle navbaritem">Spokane power stroke</h1>
@@ -25,7 +25,7 @@ export const Nav = () => (
           <p className="navbarcolor">Navbar</p>
         </Navbar.Brand>
       </NavLink>
-      <NavLink to="/">
+      <NavLink to="/about">
         {" "}
         <Navbar.Brand className="navbaritem">
           <p className="navbarcolor">About Us</p>

@@ -20,13 +20,13 @@ const imageVariants = {
 
 const backVariants = {
   exit: { x: 100, opacity: 0, transition },
-  enter: { x: 0, opacity: 1, transition: { delay: 1, ...transition } }
+  enter: { x: 0, opacity: 1, transition: { delay: .7, ...transition } }
 };
 
 export const Reviews = ({ match }) => (
-    <motion.div className="mysingle" initial="exit" animate="enter" exit="exit">
+    <motion.div className="mysingle" initial="exit" animate="enter" exit="exit" variants={backVariants}>
       
-      
+     
       <Container >
 <Row>
     <Col ><Card style={{ width: '18rem' }}>
