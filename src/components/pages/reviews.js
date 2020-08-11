@@ -30,7 +30,7 @@ export const Reviews = ({ match }) => (
       <Container >
 <Row>
     <Col ><Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180" />
+  <Card.Img variant="top" src="./images/stars.png" />
   <Card.Body>
     <Card.Title>Card Title</Card.Title>
     <Card.Text>
@@ -40,7 +40,7 @@ export const Reviews = ({ match }) => (
   </Card.Body>
 </Card></Col>
     <Col ><Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180" />
+  <Card.Img variant="top" src="./images/stars.png" />
   <Card.Body>
     <Card.Title>Card Title</Card.Title>
     <Card.Text>
@@ -50,7 +50,7 @@ export const Reviews = ({ match }) => (
   </Card.Body>
 </Card></Col>
     <Col ><Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180" />
+  <Card.Img variant="top" src="./images/stars.png" />
   <Card.Body>
     <Card.Title>Card Title</Card.Title>
     <Card.Text>
