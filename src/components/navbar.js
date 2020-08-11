@@ -19,7 +19,10 @@ export const Nav = () => (
         </NavLink>{" "}
         <NavLink to="/">
           <p className="maintitle">Spokane Power Stroke</p>
+
         </NavLink>
+        <p className="contactnumber"> 555-5555 
+        <br /> 20102 pitsburg street</p>
       </Navbar>
 
       <div className="underbar">
@@ -38,6 +41,12 @@ export const Nav = () => (
           {" "}
           <Navbar.Brand className="navbaritem">
             <p className="navbarcolor">Contact Us</p>
+          </Navbar.Brand>
+        </NavLink>
+        <NavLink to="/services">
+          {" "}
+          <Navbar.Brand className="navbaritem">
+            <p className="navbarcolor">Services</p>
           </Navbar.Brand>
         </NavLink>
       </div>

@@ -14,10 +14,7 @@ body {
   overflow-x: none
 }
 /* nav bar */ 
-.navbarmaster {
-  max-width: 100%;
-  border-bottom: #3d38ba 3px solid;
-}
+
 .subtext {
   color: blue;
 }
@@ -36,6 +33,8 @@ body {
  margin-left: auto;
  margin-right: auto;
  padding: 20px;
+ text-align: center;
+ 
  border-left: 1.5px solid white;
 }
 .navbaritem:hover {
@@ -50,12 +49,22 @@ body {
 .navbarlogo {
   margin-left: 10px;
 }
+.navbarmaster {
+  background-image: url('./banner.jpg');
+  background-blend-mode: normal;
+}
 .underbar {
-  background-color: 	#4547bd;
+  background-color: 	hsl(239, 48%, 51%);
+opacity: 58%;
 }
 .upperbar {
-  background-image: url('./banner.jpg');
+  
   width:  100%;
+}
+.contactnumber {
+  color: white;
+  font-size: 1.5rem;
+padding-left: 50px
 }
 /* end of nav bar */ 
 .footer {
