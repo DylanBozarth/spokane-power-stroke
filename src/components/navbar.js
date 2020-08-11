@@ -19,16 +19,18 @@ export const Nav = () => (
         </NavLink>{" "}
         <NavLink to="/">
           <p className="maintitle">Spokane Power Stroke</p>
-
         </NavLink>
-        <p className="contactnumber"> 555-5555 
-        <br /> 20102 pitsburg street</p>
       </Navbar>
-
+      <p className="contactnumber">
+        {" "}
+        555-5555
+        <br /> 20102 pitsburg street
+      </p>
       <div className="underbar">
-        <NavLink to="/about">
+        <NavLink to="/">
+          {" "}
           <Navbar.Brand className="navbaritem">
-            <p className="navbarcolor">About Us</p>
+            <p className="navbarcolor">Services</p>
           </Navbar.Brand>
         </NavLink>
         <NavLink to="/reviews">
@@ -36,17 +38,16 @@ export const Nav = () => (
           <Navbar.Brand className="navbaritem">
             <p className="navbarcolor">Reviews</p>
           </Navbar.Brand>{" "}
+        </NavLink><NavLink to="/about">
+          <Navbar.Brand className="navbaritem">
+            <p className="navbarcolor">About Us</p>
+          </Navbar.Brand>
         </NavLink>
+        
         <NavLink to="/contact">
           {" "}
           <Navbar.Brand className="navbaritem">
             <p className="navbarcolor">Contact Us</p>
-          </Navbar.Brand>
-        </NavLink>
-        <NavLink to="/services">
-          {" "}
-          <Navbar.Brand className="navbaritem">
-            <p className="navbarcolor">Services</p>
           </Navbar.Brand>
         </NavLink>
       </div>

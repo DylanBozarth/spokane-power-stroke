@@ -3,7 +3,8 @@ body {
   max-width: 100%;
   overflow: none;
   box-sizing: border-box;
-  overflow-x: none
+  overflow-x: none;
+
 }
 .App {
   background-color: white;
@@ -34,8 +35,10 @@ body {
  margin-right: auto;
  padding: 20px;
  text-align: center;
- 
+ width: 45vw;
+ height: 5vh;
  border-left: 1.5px solid white;
+ z-index: 99;
 }
 .navbaritem:hover {
   text-decoration: none;
@@ -45,6 +48,7 @@ body {
 }
 .navbarcolor {
   color: white;
+  border-width: 100%;
 }
 .navbarlogo {
   margin-left: 10px;
@@ -52,19 +56,29 @@ body {
 .navbarmaster {
   background-image: url('./banner.jpg');
   background-blend-mode: normal;
+  background-size: 100% 100%;
+  width: 100%;
+  overflow: hidden;
 }
+
 .underbar {
-  background-color: 	hsl(239, 48%, 51%);
-opacity: 58%;
+  
+  width: 100%;
+
 }
 .upperbar {
-  
   width:  100%;
+ 
 }
 .contactnumber {
   color: white;
   font-size: 1.5rem;
-padding-left: 50px
+  margin-top: -7%;
+align-self: auto;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+border-bottom: 1px solid white;
 }
 /* end of nav bar */ 
 .footer {

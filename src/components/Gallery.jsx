@@ -55,7 +55,7 @@ const imageVariants = {
           animate="enter"
           exit="exit"
           variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
-        >
+        > 
           
           {images.map((id, i) => (
             <Thumbnail key={id} id={id} i={i} />
