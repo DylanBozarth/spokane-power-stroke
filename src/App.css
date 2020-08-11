@@ -5,14 +5,15 @@ body {
 }
 .App {
   background-color: white;
-  color: blue;
+  color: #3d38ba;
   max-width: 100%;
   overflow: none;
+  margin-bottom: 10%;
 }
 /* nav bar */ 
 .navbarmaster {
   max-width: 100%;
-  border-bottom: blue 3px solid;
+  border-bottom: #3d38ba 3px solid;
 }
 .subtext {
   color: blue;
@@ -30,7 +31,7 @@ body {
  
 }
 .navbarcolor {
-  color: blue;
+  color: #3d38ba;
 }
 .navbarlogo {
   margin-left: 10px;
@@ -42,7 +43,7 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: blue;
+  background-color: #3d38ba;
   color: black;
   text-align: center;
   z-index: 99;
@@ -143,4 +144,18 @@ top: 5%;
 
 .mainpagetitle{
   margin-bottom: 10%;
+}
+
+
+/* reviews */
+.reviewspage {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mysingle {
+  
+    overflow: hidden;
+    height: 150vh;
+    width: 100%;
+  
 }
