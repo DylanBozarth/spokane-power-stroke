@@ -35,9 +35,10 @@ body {
  margin-right: auto;
  padding: 20px;
  text-align: center;
- width: 45vw;
+ width: 17vw;
  height: 5vh;
  z-index: 99;
+ margin-bottom: 1%;
  text-decoration: underline;
  text-decoration-color: white;
 }
@@ -50,6 +51,8 @@ body {
 .navbarcolor {
   color: white;
   border-width: 100%;
+  font-size: 1.5rem;
+  
 }
 .navbarlogo {
   margin-left: 10px;
@@ -192,9 +195,18 @@ top: 5%;
 
 
 /* reviews */
+.reviewmaster {
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+max-height: 100%;
+max-width: 100%;
+}
 .reviewspage {
-  margin-left: auto;
-  margin-right: auto;
+  
+  margin-left: 4%;
+  margin-right: 4%;
+ position: relative;
 }
 .centertext {
   text-align: center;
@@ -218,4 +230,10 @@ top: 5%;
 .aboutslider {
   margin-top: -0%;
  
+}
+
+
+/* contact page */ 
+.contactpage {
+  overflow-x: hidden;
 }

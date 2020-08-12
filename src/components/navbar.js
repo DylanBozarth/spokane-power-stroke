@@ -21,11 +21,7 @@ export const Nav = () => (
           <p className="maintitle">Spokane Power Stroke</p>
         </NavLink>
       </Navbar>
-      <p className="contactnumber">
-        {" "}
-        509 879 0391
-        <br /> 2833 N Pittsburg St
-      </p>
+      
       <div className="underbar">
         <NavLink to="/">
           {" "}

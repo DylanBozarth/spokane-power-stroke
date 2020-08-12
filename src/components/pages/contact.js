@@ -31,7 +31,7 @@ export const Contact = ({ match }) => (
     exit="exit"
     variants={backVariants}
   >
-    <Container>
+    <Container className="contactpage">
       <div className="mapcontainer"><MapContainer /></div>
         
          

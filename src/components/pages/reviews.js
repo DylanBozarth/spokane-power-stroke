@@ -98,18 +98,18 @@ class Reviews extends Component {
   render() {
     return (
       <motion.div
-        className="mysingle"
+        className="reviewmaster "
         initial="exit"
         animate="enter"
         exit="exit"
         variants={backVariants}
       >
        <h1 className="centertext">Our latest google reviews</h1> 
-       <Container className="row">
+       <Container className="col-sm-12 reviewspage row">
         
         
-          {this.state.items.map(({ name, desc, id }) => (
-            <Card key={id} style={{ width: "18rem" }}>
+          {this.state.items.map(({ name, desc }) => (
+            <Card key={name} style={{ width: "18rem" }}>
               <Card.Img variant="top" src="./images/stars.png" />
               <Card.Body>
                 <Card.Title className="title">{name}</Card.Title>
@@ -118,6 +118,7 @@ class Reviews extends Component {
             </Card>
           ))}
         </Container>
+        <h3 className="centertext"><a href="https://www.google.com/search?source=hp&ei=LFgzX8HjLry90PEPkbWRkAI&q=spokane+power+stroke&oq=spokane+power+stroke&gs_lcp=CgZwc3ktYWIQAzILCC4QxwEQrwEQkwI6CAgAELEDEIMBOggILhCxAxCDAToICC4QxwEQowI6BQgAELEDOgsILhCxAxDHARCjAjoCCAA6AgguOggILhDHARCvAToNCAAQsQMQgwEQRhCAAjoFCC4QsQM6DgguELEDEIMBEMcBEK8BOgsILhCxAxDHARCvAToOCC4QsQMQgwEQxwEQowI6CwguELEDEIMBEJMCOgYIABAWEB46AggmUO4EWP8bYIYdaABwAHgCgAH6AogBiBeSAQg2LjExLjEuMpgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwjBqcSh05TrAhW8HjQIHZFaBCIQ4dUDCAk&uact=5#lrd=0x549e18d14732cc09:0xa4e83daf6423e967,1,,,">View the latest reviews on Google </a></h3>
       </motion.div>
     );
   }
