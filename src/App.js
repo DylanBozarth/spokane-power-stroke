@@ -3,7 +3,7 @@ import './App.css';
 import {Nav } from './components/navbar';
 import { AnimatePresence } from "framer-motion";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Gallery } from "./components/Gallery";
+import  Gallery  from "./components/Gallery";
 import { SingleImage } from "./components/SingleImage";
 import  {Page1} from './components/pages/page1'
 import {Page2} from './components/pages/page2'

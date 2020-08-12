@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { images } from "./images";
@@ -25,43 +25,50 @@ const imageVariants = {
     hover: { scale: 1.25 }
   };
   
-  const Thumbnail = ({ id, i }) => (
-    <motion.div className="thumbnail" variants={thumbnailVariants}>
-      <motion.div
-        className="frame"
-        whileHover="hover"
-        variants={frameVariants}
-        transition={transition}
-      >
-        <Link to={`/image/${i}`}>
-  
-          <motion.img
-            src={id}
-            alt={id}
-            variants={imageVariants}
-            transition={transition}
-          />
-        </Link>
-      </motion.div>
-    </motion.div>
-  );
-  
-  export const Gallery = () => (
-    <>
-      <div className="gallery">
+class Gallery extends Component {
+  constructor( ) {
+    super()
+    this.state = {}
+  }
+  state = {  }
+  render() { 
+    return ( <div className="gallery">
+    <motion.div
+      className="thumbnails"
+      initial="initial"
+      animate="enter"
+      exit="exit"
+      variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
+    > 
+      
+      {images.map((id, i) => (
+        <motion.div className="thumbnail" variants={thumbnailVariants}>
         <motion.div
-          className="thumbnails"
-          initial="initial"
-          animate="enter"
-          exit="exit"
-          variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
-        > 
-          
-          {images.map((id, i) => (
-            <Thumbnail key={id} id={id} i={i} />
-          ))}
+          className="frame"
+          whileHover="hover"
+          variants={frameVariants}
+          transition={transition}
+        >
+          <Link to={`/image/${i}`}>
+    
+            <motion.img
+              src={id}
+              alt={id}
+              variants={imageVariants}
+              transition={transition}
+            />
+          </Link>
         </motion.div>
-      </div>
-    </>
-  );
+      </motion.div>
+      ))}
+    </motion.div>
+  </div>  ); 
+  }
+}
+ 
+export default Gallery;
+  
+ 
+      
+  
   

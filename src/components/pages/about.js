@@ -75,7 +75,7 @@ export const About = ({ match }) => (
       </Row>
       <h1 className="centertext">Our certifications</h1>
       <Carousel className="aboutslider">
-        <img src="./images/workingman.jpg" />
+        <img src="./images/clowncollege.jpg" />
         <img src="./images/doge.png" />
         <img src="./images/doge.png" />
         <img src="./images/doge.png" />
