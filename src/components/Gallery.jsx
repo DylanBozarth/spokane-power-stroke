@@ -28,9 +28,34 @@ class Gallery extends Component {
     super();
     this.state = {
       items: [{
-        image: './images/doge.png',
-        title: 'AAHAHHA',
+        image: './images/rotor.jpg',
+        title: 'Engine Repair',
         number: 0
+      },
+      {
+        image: './images/sexyengine.jpg',
+        title: 'Whatever this part is',
+        number: 1
+      },
+      {
+        image: './images/truckengine.jpg',
+        title: 'Truck Stuff',
+        number: 2
+      },
+      {
+        image: './images/workingman.jpg',
+        title: 'Vitamin water!',
+        number: 3
+      },
+      {
+        image: './images/doge.png',
+        title: 'Need 2 more photos',
+        number: 4
+      },
+      {
+        image: './images/doge.png',
+        title: 'Doge',
+        number: 5
       }],
     };
   }
@@ -45,7 +70,7 @@ class Gallery extends Component {
           exit="exit"
           variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
         >
-          {this.state.items.map(({title, image, number}) => (
+          {this.state.items.map(({title, image, number }) => (
             <motion.div className="thumbnail" variants={thumbnailVariants}>
               <motion.div
                 className="frame"
@@ -53,8 +78,8 @@ class Gallery extends Component {
                 variants={frameVariants}
                 transition={transition}
               >
-                <h1>{title}</h1>
-                <Link to={'/image/${number}'}>
+                <h1 className="gallerytitle">{title}</h1>
+                <Link to={`/image/${number}`}>
                   <motion.img
                     src={image}
                     alt={image}
@@ -66,6 +91,9 @@ class Gallery extends Component {
             </motion.div>
           ))}
         </motion.div>
+        <div className="weworkwith">We work with the following: <br />
+        Trucks. Big, Small, Ice cream, or even fire.  Ford probably. 
+        Maybe Japanese Trucks</div>
       </div>
     );
   }

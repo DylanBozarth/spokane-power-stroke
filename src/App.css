@@ -105,7 +105,14 @@ text-align: center;
 }
 /* start of gallery */ 
 
-
+.gallerytitle {
+  z-index: 99;
+  text-align: center;
+  padding-left: auto;
+  padding-right: auto;
+  margin-bottom: 13%;
+font-size: 2rem;
+}
 .gallery {
   padding: 25px;
   margin: 0 auto;
@@ -123,11 +130,9 @@ text-align: center;
 }
 
 .thumbnail {
-  flex: 1 0 33%;
   margin: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+ 
   cursor: pointer;
 }
 
@@ -136,7 +141,7 @@ text-align: center;
 }
 
 .thumbnail img {
-  width: 45vw;
+  width: 100%;
 
   height: 100%;
 }
@@ -169,35 +174,19 @@ top: 5%;
 }
 
 @media screen and (min-width: 600px) {
-  h1 {
-    font-size: 140px;
-    bottom: -130px;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  h1 {
-    font-size: 180px;
-    bottom: -170px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  h1 {
-    font-size: 220px;
-    bottom: -200px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  h1 {
-    font-size: 280px;
-    bottom: -260px;
+  .thumbnail img {
+    width: 46vw;
+  
+    height: 100%;
   }
 }
 
 
 /* my css */ 
-
+.weworkwith {
+  text-align: center;
+  font-size: 2rem;
+}
 .mainpagetitle{
   margin-bottom: 10%;
 }
