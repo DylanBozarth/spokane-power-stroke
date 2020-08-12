@@ -14,7 +14,7 @@ export const Nav = () => (
                 src="./images/logonew.png"
                 width="110"
                 height="105"
-                className="d-inline-block align-top"
+                className="d-inline-block align-top icon"
               />{" "}
             </Navbar.Brand>
           </NavLink>{" "}

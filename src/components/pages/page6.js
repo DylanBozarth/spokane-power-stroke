@@ -2,6 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
+import { Container, Col, Row} from "react-bootstrap";
 const transition = {
   duration: 1,
   ease: [0.43, 0.13, 0.23, 0.96]
@@ -22,14 +23,22 @@ const backVariants = {
 };
 
 export const Page6 = ({ match }) => (
-  <motion.div className="single" initial="exit" animate="enter" exit="exit">
+  <Container className="innerpage">
+    <motion.div className="single" initial="exit" animate="enter" exit="exit">
+      <h1 className="centertext">Engine stuff</h1>
+      <Row className="justify-content-md-center">
     <motion.img
-      variants={imageVariants}
-      src={"../images/rotor.jpg"}
-      alt="image"
-    />
-    <motion.div className="back" variants={backVariants}> 
-      <Link to="/">← Back</Link>
+        variants={imageVariants}
+        src={"../images/rotor.jpg"}
+        alt="image"
+      />
+   
+  </Row> <Row className="justify-content-md-center"><Col className="pagetext">Here we go and ad adaskdnaksjdkasjdkasjdkajsdkjaskdjaksdjkasj dasjd</Col>
+      <motion.div className="back" variants={backVariants}>
+        <Link to="/" className="back">
+          ← Back
+        </Link>
+      </motion.div></Row>
     </motion.div>
-  </motion.div>
+  </Container>
 );
