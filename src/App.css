@@ -4,7 +4,6 @@ body {
   overflow: none;
   box-sizing: border-box;
   overflow-x: none;
-
 }
 .App {
   background-color: white;
@@ -12,20 +11,20 @@ body {
   max-width: 100%;
   overflow: none;
   margin-bottom: 10%;
-  overflow-x: none
+  overflow-x: none;
 }
-/* nav bar */ 
+/* nav bar */
 
 .subtext {
   color: blue;
 }
 .maintitle {
   text-align: center;
- font-size: 2.4em;
- color: white;
- font-family: 'Oswald', sans-serif;
- -webkit-text-stroke: 1.4px firebrick;
- text-transform: uppercase;
+  font-size: 2.4em;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  -webkit-text-stroke: 1.4px firebrick;
+  text-transform: uppercase;
 }
 .maintitle:hover {
   text-decoration-color: #3d38ba;
@@ -34,18 +33,17 @@ body {
   margin-left: -150px;
 }
 .navbaritem {
-
- text-align: center;
-min-width: 250px;
-max-width: 250px;
-flex-direction: row;
-margin-left: -4%;
- z-index: 99;
- margin-bottom: -4%;
- font-family: 'Oswald', sans-serif;
- -webkit-text-stroke: 1.4px firebrick;
- text-transform: uppercase;
- border: 1px white solid;
+  text-align: center;
+  min-width: 250px;
+  max-width: 250px;
+  flex-direction: row;
+  margin-left: -4%;
+  z-index: 99;
+  margin-bottom: -4%;
+  font-family: "Oswald", sans-serif;
+  -webkit-text-stroke: 1.4px firebrick;
+  text-transform: uppercase;
+  border: 1px white solid;
 }
 .underbar {
   align-items: center;
@@ -62,37 +60,33 @@ margin-left: -4%;
   color: white;
   border-width: 100%;
   font-size: 1.5rem;
-  
 }
 .navbarlogo {
   margin-left: 10px;
 }
 .navbarmaster {
-  background-image: url('./banner.jpg');
+  background-image: url("./banner.jpg");
   background-blend-mode: normal;
   background-size: 100% 100%;
   width: 100%;
   overflow: hidden;
-  
 }
 .upperbar {
   align-items: right;
- 
+
   flex-direction: row;
 }
-
-
 
 .contactnumber {
   color: white;
   font-size: 1.5rem;
   margin-top: -7%;
-align-self: auto;
-margin-left: auto;
-margin-right: auto;
-text-align: center;
+  align-self: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-/* end of nav bar */ 
+/* end of nav bar */
 .footer {
   position: fixed;
   left: 0;
@@ -100,10 +94,11 @@ text-align: center;
   width: 100%;
   background-color: #3d38ba;
   color: black;
+  height: 2%;
   text-align: center;
   z-index: 99;
 }
-/* start of gallery */ 
+/* start of gallery */
 
 .gallerytitle {
   z-index: 99;
@@ -111,7 +106,7 @@ text-align: center;
   padding-left: auto;
   padding-right: auto;
   margin-bottom: 13%;
-font-size: 2rem;
+  font-size: 2rem;
 }
 .gallery {
   padding: 25px;
@@ -126,13 +121,12 @@ font-size: 2rem;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  
 }
 
 .thumbnail {
   margin: 10px;
   display: flex;
- 
+
   cursor: pointer;
 }
 
@@ -145,8 +139,6 @@ font-size: 2rem;
 
   height: 100%;
 }
-
-
 
 .single {
   overflow: hidden;
@@ -164,7 +156,7 @@ font-size: 2rem;
   margin-right: 5%;
 }
 .back {
-top: 5%;
+  top: 5%;
   font-size: 54px;
   z-index: 1;
 }
@@ -176,62 +168,61 @@ top: 5%;
 @media screen and (min-width: 600px) {
   .thumbnail img {
     width: 46vw;
-  
+
     height: 100%;
   }
 }
 
-
-/* my css */ 
+/* my css */
 .weworkwith {
   text-align: center;
   font-size: 2rem;
 }
-.mainpagetitle{
+.mainpagetitle {
   margin-bottom: 10%;
 }
-
 
 /* reviews */
 .reviewmaster {
   flex-direction: column;
   margin-left: 10%;
   margin-right: 10%;
-max-height: 100%;
-max-width: 100%;
+  max-height: 100%;
+  max-width: 100%;
 }
 .reviewspage {
-  
   margin-left: 4%;
   margin-right: 4%;
- position: relative;
+  position: relative;
 }
 .centertext {
   text-align: center;
 }
 .mysingle {
-  
-    
-    height: 100%;
-    align-items: center;
-    width: 100%;
-  
+  height: 100%;
+  align-items: center;
+  width: 100%;
 }
 .row {
   margin-left: 15%;
   margin-right: 15%;
 }
 
-
-/* about page */ 
+/* about page */
 
 .aboutslider {
   margin-top: -0%;
- 
 }
 
-
-/* contact page */ 
+/* contact page */
 .contactpage {
   overflow-x: hidden;
+  max-width: 100% !important;
+}
+.contactinfo {
+  float: right;
+  font-size: 2rem;
+  text-align: center;
+  width: 50%;
+  margin-top: 10%;
 }
