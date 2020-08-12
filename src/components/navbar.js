@@ -5,7 +5,8 @@ import { Navbar, Container } from "react-bootstrap";
 export const Nav = () => (
   <div className="navbarmaster">
     <>
-      <Navbar className="upperbar">
+    <div className="row upperbar">
+      <Navbar className="">
         <NavLink to="/">
           <Navbar.Brand>
             <img
@@ -22,7 +23,7 @@ export const Nav = () => (
         </NavLink>
       </Navbar>
       
-      <div className="underbar">
+      <div className="underbar row">
         <NavLink to="/">
           {" "}
           <Navbar.Brand className="navbaritem">
@@ -46,7 +47,7 @@ export const Nav = () => (
             <p className="navbarcolor">Contact Us</p>
           </Navbar.Brand>
         </NavLink>
-      </div>
+      </div></div>
     </>
   </div>
 );

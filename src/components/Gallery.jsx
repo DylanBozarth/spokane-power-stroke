@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { images } from "./images";
-
-
 
 const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] };
 
@@ -13,62 +11,64 @@ const thumbnailVariants = {
   exit: {
     scale: 0.5,
     opacity: 0,
-    transition: { duration: 1.5, ...transition }
-  }
+    transition: { duration: 1.5, ...transition },
+  },
 };
 
 const frameVariants = {
-  hover: { scale: 0.95 }
+  hover: { scale: 0.95 },
 };
 
 const imageVariants = {
-    hover: { scale: 1.25 }
-  };
-  
+  hover: { scale: 1.25 },
+};
+
 class Gallery extends Component {
-  constructor( ) {
-    super()
-    this.state = {}
+  constructor() {
+    super();
+    this.state = {
+      items: [{
+        image: './images/doge.png',
+        title: 'AAHAHHA',
+        number: 0
+      }],
+    };
   }
-  state = {  }
-  render() { 
-    return ( <div className="gallery">
-    <motion.div
-      className="thumbnails"
-      initial="initial"
-      animate="enter"
-      exit="exit"
-      variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
-    > 
-      
-      {images.map((id, i) => (
-        <motion.div className="thumbnail" variants={thumbnailVariants}>
+  state = {};
+  render() {
+    return (
+      <div className="gallery">
         <motion.div
-          className="frame"
-          whileHover="hover"
-          variants={frameVariants}
-          transition={transition}
+          className="thumbnails"
+          initial="initial"
+          animate="enter"
+          exit="exit"
+          variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
         >
-          <Link to={`/image/${i}`}>
-    
-            <motion.img
-              src={id}
-              alt={id}
-              variants={imageVariants}
-              transition={transition}
-            />
-          </Link>
+          {this.state.items.map(({title, image, number}) => (
+            <motion.div className="thumbnail" variants={thumbnailVariants}>
+              <motion.div
+                className="frame"
+                whileHover="hover"
+                variants={frameVariants}
+                transition={transition}
+              >
+                <h1>{title}</h1>
+                <Link to={'/image/${number}'}>
+                  <motion.img
+                    src={image}
+                    alt={image}
+                    variants={imageVariants}
+                    transition={transition}
+                  />
+                </Link>
+              </motion.div>
+            </motion.div>
+          ))}
         </motion.div>
-      </motion.div>
-      ))}
-    </motion.div>
-  </div>  ); 
+      </div>
+    );
   }
 }
- 
+
 export default Gallery;
-  
- 
-      
-  
-  

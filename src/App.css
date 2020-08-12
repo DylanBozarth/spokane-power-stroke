@@ -21,8 +21,11 @@ body {
 }
 .maintitle {
   text-align: center;
- font-size: 2em;
+ font-size: 2.4em;
  color: white;
+ font-family: 'Oswald', sans-serif;
+ -webkit-text-stroke: 1.4px firebrick;
+ text-transform: uppercase;
 }
 .maintitle:hover {
   text-decoration-color: #3d38ba;
@@ -31,16 +34,23 @@ body {
   margin-left: -150px;
 }
 .navbaritem {
- margin-left: auto;
- margin-right: auto;
- padding: 20px;
+
  text-align: center;
- width: 17vw;
- height: 5vh;
+min-width: 250px;
+max-width: 250px;
+flex-direction: row;
+margin-left: -4%;
  z-index: 99;
- margin-bottom: 1%;
- text-decoration: underline;
- text-decoration-color: white;
+ margin-bottom: -4%;
+ font-family: 'Oswald', sans-serif;
+ -webkit-text-stroke: 1.4px firebrick;
+ text-transform: uppercase;
+ border: 1px white solid;
+}
+.underbar {
+  align-items: center;
+  padding-left: 25vw;
+  flex-direction: row;
 }
 .navbaritem:hover {
   text-decoration: none;
@@ -63,6 +73,12 @@ body {
   background-size: 100% 100%;
   width: 100%;
   overflow: hidden;
+  
+}
+.upperbar {
+  align-items: right;
+ 
+  flex-direction: row;
 }
 
 
