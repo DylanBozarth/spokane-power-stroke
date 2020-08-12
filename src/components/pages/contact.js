@@ -33,8 +33,8 @@ export const Contact = ({ match }) => (
   >
     <Container className="contactpage">
       <div className="mapcontainer"><MapContainer /></div>
-        <Container><p className="contactinfo"><i class="fa fa-phone" aria-hidden="true"></i> (509) 879-0391 <br /> 
-        <i class="fa fa-map-marker" aria-hidden="true"></i> 2833 N Pittsburg St, Spokane, WA 99207</p></Container>
+        <Container><p className="contactinfo"><i className="fa fa-phone" aria-hidden="true"></i> (509) 879-0391 <br /> 
+        <i className="fa fa-map-marker" aria-hidden="true"></i> 2833 N Pittsburg St, Spokane, WA 99207</p></Container>
          
           
 
