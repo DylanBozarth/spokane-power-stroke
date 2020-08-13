@@ -1,7 +1,6 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import { motion } from "framer-motion";
-import Image from 'react-bootstrap/Image'
+import { Container, Col, Row, Image} from "react-bootstrap";
 const transition = {
   duration: 1,
   ease: [0.43, 0.13, 0.23, 0.96],
@@ -12,7 +11,7 @@ const backVariants = {
   enter: { x: 0, opacity: 1, transition: { delay: 0.2, ...transition } },
 };
 
-export const Contact = ({ match }) => (
+export const Contact = () => (
   <motion.div
     className="mysingle"
     initial="exit"
@@ -21,15 +20,22 @@ export const Contact = ({ match }) => (
     variants={backVariants}
   >
     <Container className="contactpage">
-      <Image className="mapimage" src="./images/map.png" fluid></Image>
-      <p className="contactinfo">
-        <i className="fa fa-phone" aria-hidden="true"></i> (509) 879-0391 <br />
-        <i className="fa fa-map-marker" aria-hidden="true"></i> 2833 N Pittsburg
-        St, Spokane, WA 99207
-        <br />
-        <i className="fa fa-envelope" aria-hidden="true"></i>
-        Email @goes here
-      </p>
+      <Row>
+        <Col xs={12} md={8}>
+          <Image className="" src="./images/map.png" fluid></Image>
+        </Col>
+        <Col >
+          <p className="contactinfo">
+            <i className="fa fa-phone" aria-hidden="true"></i> (509) 879-0391{" "}
+            <br />
+            <i className="fa fa-map-marker" aria-hidden="true"></i> 2833 N
+            Pittsburg St, Spokane, WA 99207
+            <br />
+            <i className="fa fa-envelope" aria-hidden="true"></i>
+            Email @goes here
+          </p>
+        </Col>
+      </Row>
     </Container>
   </motion.div>
 );

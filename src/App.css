@@ -174,12 +174,13 @@ body {
   text-decoration: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .thumbnail img {
     width: 46vw;
 
     height: 100%;
   }
+  
 }
 
 /* my css */
@@ -226,20 +227,13 @@ body {
 /* contact page */
 .contactpage {
   overflow-x: hidden;
-  max-width: 100% !important;
+  width: 100% !important;
   margin-top: 3%;
 }
-.mapimage {
-  float: left;
-  width: 48vw;
-}
+
 .contactinfo {
-  float: right;
-  font-size: 2rem;
-  text-align: center;
-  width: 50%;
-  margin-top: 10%;
-}
-.mapcontainer {
-  float: left;
+  
+  font-size: 32px;
+  
+ 
 }

@@ -4,14 +4,12 @@ import {Nav } from './components/navbar';
 import { AnimatePresence } from "framer-motion";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import  Gallery  from "./components/Gallery";
-import { SingleImage } from "./components/SingleImage";
 import  {Page1} from './components/pages/page1'
 import {Page2} from './components/pages/page2'
 import {Page3} from './components/pages/page3'
 import {Page4} from './components/pages/page4'
 import {Page5} from './components/pages/page5'
 import {Page6} from './components/pages/page6'
-import {Header} from './components/header'
 import { Footerthing } from './components/footer';
 import  Reviews  from './components/pages/reviews';
 import { About } from './components/pages/about';
