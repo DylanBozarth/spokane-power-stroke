@@ -227,6 +227,11 @@ body {
 .contactpage {
   overflow-x: hidden;
   max-width: 100% !important;
+  margin-top: 3%;
+}
+.mapimage {
+  float: left;
+  width: 48vw;
 }
 .contactinfo {
   float: right;
@@ -234,4 +239,7 @@ body {
   text-align: center;
   width: 50%;
   margin-top: 10%;
+}
+.mapcontainer {
+  float: left;
 }

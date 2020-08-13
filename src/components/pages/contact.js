@@ -1,26 +1,15 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { Map, GoogleApiWrapper } from 'google-maps-react';
-import { MapContainer } from "../mapcontainer";
-
+import Image from 'react-bootstrap/Image'
 const transition = {
   duration: 1,
   ease: [0.43, 0.13, 0.23, 0.96],
 };
 
-const imageVariants = {
-  exit: { y: "50%", opacity: 0, transition },
-  enter: {
-    y: "0%",
-    opacity: 1,
-    transition,
-  },
-};
-
 const backVariants = {
   exit: { x: 100, opacity: 0, transition },
-  enter: { x: 0, opacity: 1, transition: { delay: .2, ...transition } },
+  enter: { x: 0, opacity: 1, transition: { delay: 0.2, ...transition } },
 };
 
 export const Contact = ({ match }) => (
@@ -32,13 +21,15 @@ export const Contact = ({ match }) => (
     variants={backVariants}
   >
     <Container className="contactpage">
-      <div className="mapcontainer"><MapContainer /></div>
-        <Container><p className="contactinfo"><i className="fa fa-phone" aria-hidden="true"></i> (509) 879-0391 <br /> 
-        <i className="fa fa-map-marker" aria-hidden="true"></i> 2833 N Pittsburg St, Spokane, WA 99207</p></Container>
-         
-          
-
-      
+      <Image className="mapimage" src="./images/map.png" fluid></Image>
+      <p className="contactinfo">
+        <i className="fa fa-phone" aria-hidden="true"></i> (509) 879-0391 <br />
+        <i className="fa fa-map-marker" aria-hidden="true"></i> 2833 N Pittsburg
+        St, Spokane, WA 99207
+        <br />
+        <i className="fa fa-envelope" aria-hidden="true"></i>
+        Email @goes here
+      </p>
     </Container>
   </motion.div>
 );
