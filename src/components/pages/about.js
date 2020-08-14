@@ -28,7 +28,7 @@ export const About = ({ match }) => (
       <Row>
         <Col>
           <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="./images/doge.png" />
+            <Card.Img variant="top" src="./images/doge.png" alt="person" />
             <Card.Body>
               <Card.Title className="centertext">Brandon Bozarth</Card.Title>
               <Card.Text>
@@ -40,7 +40,7 @@ export const About = ({ match }) => (
         </Col>
         <Col>
           <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="./images/doge.png" />
+            <Card.Img variant="top" src="./images/doge.png"  alt="person" />
             <Card.Body>
               <Card.Title className="centertext">Alvin Lastname</Card.Title>
               <Card.Text>
@@ -52,7 +52,7 @@ export const About = ({ match }) => (
         </Col>
         <Col>
           <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="./images/doge.png" />
+            <Card.Img variant="top" src="./images/doge.png"  alt="person" />
             <Card.Body>
               <Card.Title className="centertext">
                 Dustin? I don't know I forgot.
@@ -67,12 +67,12 @@ export const About = ({ match }) => (
       </Row>
       <h1 className="centertext">Our certifications</h1>
       <Carousel className="aboutslider">
-        <img src="./images/clowncollege.jpg" />
-        <img src="./images/doge.png" />
-        <img src="./images/doge.png" />
-        <img src="./images/doge.png" />
-        <img src="./images/doge.png" />
-        <img src="./images/doge.png" />
+        <img src="./images/clowncollege.jpg" alt="certification" />
+        <img src="./images/doge.png" alt="certification"  />
+        <img src="./images/doge.png" alt="certification"  />
+        <img src="./images/doge.png" alt="certification"  />
+        <img src="./images/doge.png" alt="certification"  />
+        <img src="./images/doge.png" alt="certification"  />
       </Carousel>
     </Container>
   </motion.div>

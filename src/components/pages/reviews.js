@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Container, Col, Row, Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Container, Card } from "react-bootstrap";
 import { motion } from "framer-motion";
 
 const transition = {

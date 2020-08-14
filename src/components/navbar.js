@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Navbar, Container } from "react-bootstrap";
+import { Navbar } from "react-bootstrap";
 
 export const Nav = () => (
   <div className="navbarmaster">
