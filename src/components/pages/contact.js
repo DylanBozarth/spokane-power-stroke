@@ -32,7 +32,7 @@ export const Contact = () => (
             Pittsburg St, Spokane, WA 99207
             <br />
             <i className="fa fa-envelope" aria-hidden="true"></i>
-            Email @goes here
+           Spokanepowerstroke@gmail.com
           </p>
         </Col>
       </Row>

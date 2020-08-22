@@ -26,36 +26,39 @@ class Gallery extends Component {
   constructor() {
     super();
     this.state = {
-      items: [{
-        image: './images/rotor.jpg',
-        title: 'Engine Repair',
-        number: 0
-      },
-      {
-        image: './images/sexyengine.jpg',
-        title: 'Whatever this part is',
-        number: 1
-      },
-      {
-        image: './images/truckengine.jpg',
-        title: 'Truck Stuff',
-        number: 2
-      },
-      {
-        image: './images/workingman.jpg',
-        title: 'Vitamin water!',
-        number: 3
-      },
-      {
-        image: './images/doge.png',
-        title: 'Need 2 more photos',
-        number: 4
-      },
-      {
-        image: './images/doge.png',
-        title: 'Doge',
-        number: 5
-      }],
+      items: [
+        
+        {
+          image: "./images/truckengine.jpg",
+          title: "Ford a",
+          number: 1,
+        },
+        {
+          image: "./images/sexyengine.jpg",
+          title: "Truck Stuff",
+          number: 2,
+        },
+        {
+          image: "./images/brake.jpg",
+          title: "Engine Repair",
+          number: 0,
+        },
+        {
+          image: "./images/steering.jpg",
+          title: "Engine Repair",
+          number: 0,
+        },
+        {
+          image: "./images/rotor.jpg",
+          title: "Engine Repair",
+          number: 0,
+        },
+        {
+          image: "./images/workingman.jpg",
+          title: "Engine Repair",
+          number: 0,
+        },
+      ],
     };
   }
   state = {};
@@ -69,7 +72,7 @@ class Gallery extends Component {
           exit="exit"
           variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
         >
-          {this.state.items.map(({title, image, number }) => (
+          {this.state.items.map(({ title, image, number }) => (
             <motion.div className="thumbnail" variants={thumbnailVariants}>
               <motion.div
                 className="frame"
@@ -90,9 +93,7 @@ class Gallery extends Component {
             </motion.div>
           ))}
         </motion.div>
-        <div className="weworkwith">We work with the following: <br />
-        Trucks. Big, Small, Ice cream, or even fire.  Ford probably. 
-        Maybe Japanese Trucks</div>
+        
       </div>
     );
   }

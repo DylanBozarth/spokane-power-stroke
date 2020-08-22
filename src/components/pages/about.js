@@ -42,7 +42,7 @@ export const About = ({ match }) => (
           <Card style={{ width: "18rem" }}>
             <Card.Img variant="top" src="./images/doge.png"  alt="person" />
             <Card.Body>
-              <Card.Title className="centertext">Alvin Lastname</Card.Title>
+              <Card.Title className="centertext">Alvin Finch</Card.Title>
               <Card.Text>
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -55,7 +55,7 @@ export const About = ({ match }) => (
             <Card.Img variant="top" src="./images/doge.png"  alt="person" />
             <Card.Body>
               <Card.Title className="centertext">
-                Dustin? I don't know I forgot.
+                Dustin Anderson
               </Card.Title>
               <Card.Text>
                 Some quick example text to build on the card title and make up

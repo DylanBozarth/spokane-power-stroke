@@ -26,7 +26,7 @@ const backVariants = {
 export const Page1 = ({ match }) => (
   <Container className="innerpage">
     <motion.div className="single" initial="exit" animate="enter" exit="exit">
-      <h1 className="centertext">Engine stuff</h1>
+      <h1 className="centertext"> asdasd a</h1>
       <Row className="justify-content-md-center">
     <motion.img
         variants={imageVariants}
@@ -34,7 +34,7 @@ export const Page1 = ({ match }) => (
         alt="image"
       />
    
-  </Row> <Row className="justify-content-md-center"><Col className="pagetext">Here we go and ad adaskdnaksjdkasjdkasjdkajsdkjaskdjaksdjkasj dasjd</Col>
+  </Row> <Row className="justify-content-md-center"><Col className="pagetext">Hnigger djaksdjkasj dasjd</Col>
       <motion.div className="back" variants={backVariants}>
         <Link to="/" className="back">
           ← Back

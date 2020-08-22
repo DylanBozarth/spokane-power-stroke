@@ -94,7 +94,7 @@ class Reviews extends Component {
         exit="exit"
         variants={backVariants}
       >
-       <h1 className="centertext">What niggas be sayin'</h1> 
+       <h1 className="centertext">What our customers are saying</h1> 
        <Container className="col-sm-12 reviewspage row">
         
         
