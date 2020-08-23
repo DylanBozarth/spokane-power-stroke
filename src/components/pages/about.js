@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Col, Row, Card } from "react-bootstrap";
 import { motion } from "framer-motion";
+import Certrow from "../certrow";
 
 const transition = {
   duration: 1,
@@ -32,6 +33,7 @@ export const About = ({ match }) => (
                 the bulk of the card's content.
               </Card.Text>
             </Card.Body>
+            <Certrow />
           </Card>
         </Col>
         <Col>
@@ -59,59 +61,7 @@ export const About = ({ match }) => (
           </Card>
         </Col>
       </Row>
-      {/* start of the certiciations */}
-      <Col>
-        <Row className="certrow">
-          <Card style={{ width: "8rem", padding: "0px" }}>
-            <Card.Img variant="top" src="./images/doge.png" alt="person" />
-            <Card.Body>
-              <Card.Title className="centertext">Brandon Bozarth</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "8rem", padding: "0px" }}>
-            <Card.Img variant="top" src="./images/doge.png" alt="person" />
-            <Card.Body>
-              <Card.Title className="centertext">Brandon Bozarth</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "8rem", padding: "0px" }}>
-            <Card.Img variant="top" src="./images/doge.png" alt="person" />
-            <Card.Body>
-              <Card.Title className="centertext">Brandon Bozarth</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "8rem", padding: "0px" }}>
-            <Card.Img variant="top" src="./images/doge.png" alt="person" />
-            <Card.Body>
-              <Card.Title className="centertext">Brandon Bozarth</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "8rem", padding: "0px" }}>
-            <Card.Img variant="top" src="./images/doge.png" alt="person" />
-            <Card.Body>
-              <Card.Title className="centertext">Brandon Bozarth</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "8rem", padding: "0px" }}>
-            <Card.Img variant="top" src="./images/doge.png" alt="person" />
-            <Card.Body>
-              <Card.Title className="centertext">Brandon Bozarth</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "8rem", padding: "0px" }}>
-            <Card.Img variant="top" src="./images/doge.png" alt="person" />
-            <Card.Body>
-              <Card.Title className="centertext">Brandon Bozarth</Card.Title>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: "8rem", padding: "0px" }}>
-          <Card.Img variant="top" src="./images/doge.png" alt="person" />
-          <Card.Body>
-            <Card.Title className="centertext">Brandon Bozarth</Card.Title>
-          </Card.Body>
-        </Card>
-        </Row>
-      </Col>
+      
     </Container>
   </motion.div>
 );
