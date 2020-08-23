@@ -1,7 +1,6 @@
 body {
   background-color: blue;
   max-width: 100%;
-  overflow: none;
   box-sizing: border-box;
   overflow-x: none;
   
@@ -45,7 +44,6 @@ body::-webkit-scrollbar {
   min-width: 250px;
   max-width: 250px;
   flex-direction: row;
-  margin-left: -4%;
   z-index: 99;
   margin-bottom: -4%;
   font-family: "Oswald", sans-serif;
@@ -121,7 +119,6 @@ body::-webkit-scrollbar {
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
-  position: relative;
 }
 
 .thumbnails {
@@ -230,9 +227,12 @@ body::-webkit-scrollbar {
 }
 
 .mainheader {
-  color: white; 
-  background-color: blue;
   text-align: center;
+  font-size: 2.8em;
+  color: whitesmoke;
+  font-family: "Oswald", sans-serif;
+  -webkit-text-stroke: 2px firebrick;
+
 }
 /* focus pages */ 
 .focusheader {
@@ -241,17 +241,32 @@ body::-webkit-scrollbar {
   margin-top: 2%;
   color: white;
   background-color: #3d38ba;
+  -webkit-text-stroke: 1.4px firebrick
 }
 .focustext {
 text-align: center;
 font-size: 2rem;
 }
 .focuspage {
-  margin-top: 5%;
+  margin-top: 2%;
+}
+.focusimage {
+  width: 100vw;
+  height: 75vh;
 }
 .back {
-  top: 5%;
-  font-size: 3rem;
-  z-index: 1;
-  float: right;
+  text-align: right;
+  font-size: 1.5em;
+  border: 2px solid white;
+  color: whitesmoke;
+  font-family: "Oswald", sans-serif;
+  -webkit-text-stroke: 1.4px firebrick;
+}
+.focuscontactus {
+  margin-top: 3.4%;
+  color: blue;
+}
+.focuscontactus:hover {
+  cursor: pointer;
+  text-decoration: none;
 }

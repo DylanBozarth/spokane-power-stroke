@@ -31,8 +31,8 @@ export const Contact = () => (
             <i className="fa fa-map-marker" aria-hidden="true"></i> 2833 N
             Pittsburg St, Spokane, WA 99207
             <br />
-            <i className="fa fa-envelope" aria-hidden="true"></i>
-           Spokanepowerstroke@gmail.com
+            <i className="fa fa-envelope" aria-hidden="true"></i>{" "}
+            Spokanepowerstroke@gmail.com
           </p>
         </Col>
       </Row>
