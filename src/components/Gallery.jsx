@@ -27,36 +27,35 @@ class Gallery extends Component {
     super();
     this.state = {
       items: [
-        
         {
           image: "./images/truckengine.jpg",
           title: "Ford a",
-          number: 1,
+          number: 0,
         },
         {
           image: "./images/sexyengine.jpg",
           title: "Truck Stuff",
-          number: 2,
+          number: 1,
         },
         {
           image: "./images/brake.jpg",
           title: "Engine Repair",
-          number: 0,
+          number: 2,
         },
         {
           image: "./images/steering.jpg",
           title: "Engine Repair",
-          number: 0,
+          number: 3,
         },
         {
           image: "./images/rotor.jpg",
           title: "Engine Repair",
-          number: 0,
+          number: 4,
         },
         {
           image: "./images/workingman.jpg",
           title: "Engine Repair",
-          number: 0,
+          number: 5,
         },
       ],
     };
@@ -65,6 +64,7 @@ class Gallery extends Component {
   render() {
     return (
       <div className="gallery">
+        <h1 className="mainheader">We specialize in ford powerstroke diesel, however we also have many years of experience in gas engines.  Foriegn and domestic</h1>
         <motion.div
           className="thumbnails"
           initial="initial"
@@ -93,7 +93,6 @@ class Gallery extends Component {
             </motion.div>
           ))}
         </motion.div>
-        
       </div>
     );
   }

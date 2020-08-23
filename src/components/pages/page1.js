@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import { Container, Col, Row} from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 
 const transition = {
   duration: 1,
@@ -26,20 +26,24 @@ const backVariants = {
 export const Page1 = ({ match }) => (
   <Container className="innerpage">
     <motion.div className="single" initial="exit" animate="enter" exit="exit">
-      <h1 className="centertext"> asdasd a</h1>
-      <Row className="justify-content-md-center">
-    <motion.img
-        variants={imageVariants}
-        src={"../images/rotor.jpg"}
-        alt="image"
-      />
-   
-  </Row> <Row className="justify-content-md-center"><Col className="pagetext">Hnigger djaksdjkasj dasjd</Col>
       <motion.div className="back" variants={backVariants}>
         <Link to="/" className="back">
           ← Back
         </Link>
-      </motion.div></Row>
+      </motion.div>
+      <h1 className="focusheader">Ford Powerstroke diesel repair</h1>
+      <Row className="justify-content-md-center">
+        <motion.img
+          variants={imageVariants}
+          src={"../images/rotor.jpg"}
+          alt="image"
+        />
+      </Row>{" "}
+      <Row className="justify-content-md-center">
+        <Col className="focustext">
+        We mainly specialise in Ford powerstroke diesel repair. From full engine rebuilds to things as basic as maintence. 
+        </Col>
+      </Row>
     </motion.div>
   </Container>
 );
