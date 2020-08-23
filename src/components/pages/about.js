@@ -2,6 +2,9 @@ import React from "react";
 import { Container, Col, Row, Card } from "react-bootstrap";
 import { motion } from "framer-motion";
 import Certrow from "../certrow";
+import Brandonrow from "../certrow";
+import Alvinrow from "../alvinrow";
+import Dustinrow from "../dustinrow";
 
 const transition = {
   duration: 1,
@@ -33,7 +36,7 @@ export const About = ({ match }) => (
                 the bulk of the card's content.
               </Card.Text>
             </Card.Body>
-            <Certrow />
+            <Brandonrow />
           </Card>
         </Col>
         <Col>
@@ -46,6 +49,7 @@ export const About = ({ match }) => (
                 the bulk of the card's content.
               </Card.Text>
             </Card.Body>
+            <Alvinrow />
           </Card>
         </Col>
         <Col>
@@ -58,10 +62,10 @@ export const About = ({ match }) => (
                 the bulk of the card's content.
               </Card.Text>
             </Card.Body>
+            <Dustinrow />
           </Card>
         </Col>
       </Row>
-      
     </Container>
   </motion.div>
 );

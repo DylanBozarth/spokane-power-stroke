@@ -3,7 +3,7 @@ import Expand from "react-expand-animated";
 
 import { Container, Col, Row, Card } from "react-bootstrap";
 
-class Brandonrow extends Component {
+class Alvinrow extends Component {
   state = { open: false };
 
   toggle = () => {
@@ -53,4 +53,4 @@ class Brandonrow extends Component {
   }
 }
 
-export default Brandonrow;
+export default Alvinrow;
