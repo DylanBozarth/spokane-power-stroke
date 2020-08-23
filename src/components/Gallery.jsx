@@ -29,32 +29,32 @@ class Gallery extends Component {
       items: [
         {
           image: "./images/truckengine.jpg",
-          title: "Ford a",
+          title: "Ford Powerstroke diesel repair",
           number: 0,
         },
         {
           image: "./images/sexyengine.jpg",
-          title: "Truck Stuff",
+          title: "Gas engine repair",
           number: 1,
         },
         {
           image: "./images/brake.jpg",
-          title: "Engine Repair",
+          title: "Brake Service",
           number: 2,
         },
         {
           image: "./images/steering.jpg",
-          title: "Engine Repair",
+          title: "Steering system repair",
           number: 3,
         },
         {
           image: "./images/rotor.jpg",
-          title: "Engine Repair",
+          title: "Differentials",
           number: 4,
         },
         {
           image: "./images/workingman.jpg",
-          title: "Engine Repair",
+          title: "Diesel Driveability ",
           number: 5,
         },
       ],
