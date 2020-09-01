@@ -38,7 +38,7 @@ class Gallery extends Component {
           number: 1,
         },
         {
-          image: "./images/brake.jpg",
+          image: "./images/brakenice.jpeg",
           title: "Brake Service",
           number: 2,
         },
