@@ -1,8 +1,8 @@
 import React from "react";
-import { Container, Col, Row, Card } from "react-bootstrap";
 import { motion } from "framer-motion";
 import {CertTab} from "../CertTab";
 
+import { Container, Col, Row } from "react-bootstrap";
 
 const transition = {
   duration: 1,
@@ -14,7 +14,7 @@ const backVariants = {
   enter: { x: 0, opacity: 1, transition: { delay: 0.2, ...transition } },
 };
 
-export const About = ({ match }) => (
+export const About = () => (
   <motion.div
     className="mysingle"
     initial="exit"
@@ -22,48 +22,38 @@ export const About = ({ match }) => (
     exit="exit"
     variants={backVariants}
   >
-    <Container>
-      <Row>
-        <Col>
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="./images/brandon.jpg" alt="person" />
-            <Card.Body>
-              <Card.Title className="centertext">Brandon Bozarth</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col>
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="./images/undertable.jpg" alt="person" />
-            <Card.Body>
-              <Card.Title className="centertext">Alvin Finch</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-            </Card.Body>
-           
-          </Card>
-        </Col>
-        <Col>
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="./images/office.jpg" alt="person" />
-            <Card.Body>
-              <Card.Title className="centertext">Dustin Anderson</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </Card.Text>
-            </Card.Body>
+    <div className="container-fluid aboutpage">
+      <div className="row">
+      <div className="col-md-4 ">
+        <div className="card">
+          <img className=" img-fluid" src="./images/brandon.jpg" alt="Card image cap" />
+          <div className="card-body">
+            <h4 className="card-title">Brandon Bozarth</h4>
+            <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             
-          </Card>
-        </Col>
-        <CertTab />
-      </Row>
-    </Container>
+          </div>
+        </div>
+      </div>
+      <div className="col-sm-4">
+        <div className="card">
+          <img className=" img-fluid" src="./images/undertable.jpg" alt="Card image cap" />
+          <div className="card-body">
+            <h4 className="card-title">Dustin Anderson</h4>
+            <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+           
+          </div>
+        </div>
+      </div>
+      <div className=" col-md-4 ">
+        <div className="card">
+          <img className=" img-fluid" src="./images/office.jpg" alt="Card image cap" />
+          <div className="card-body">
+            <h4 className="card-title">Alvin Finch</h4>
+            <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+           
+          </div>
+        </div>
+      </div>
+      </div><CertTab /></div>
   </motion.div>
 );

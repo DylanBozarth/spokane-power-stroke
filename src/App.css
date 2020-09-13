@@ -234,6 +234,12 @@ body::-webkit-scrollbar {
   -webkit-text-stroke: 2px firebrick;
 
 }
+.card-body {
+  text-align: center;
+}
+.aboutpage {
+  margin-top: 1rem;
+}
 .certrow {
   flex: end;
   margin-left: 10vw;
