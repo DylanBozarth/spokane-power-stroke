@@ -26,7 +26,7 @@ export const About = ({ match }) => (
       <Row>
         <Col>
           <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.nWJ2u-pu32Qe8dZlNEsdlQAAAA%26pid%3DApi&f=1" alt="person" />
+            <Card.Img variant="top" src="./images/brandon.jpg" alt="person" />
             <Card.Body>
               <Card.Title className="centertext">Brandon Bozarth</Card.Title>
               <Card.Text>
@@ -38,7 +38,7 @@ export const About = ({ match }) => (
         </Col>
         <Col>
           <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.istockphoto.com%2Fphotos%2Fman-writing-an-estimate-or-delivery-person-picture-id121200247%3Fk%3D6%26m%3D121200247%26s%3D170667a%26w%3D0%26h%3Dg0pva7ZQOEi6r1V8xhRqw1GZcRi3uRjaNfBQxzCXjYg%3D&f=1&nofb=1" alt="person" />
+            <Card.Img variant="top" src="./images/undertable.jpg" alt="person" />
             <Card.Body>
               <Card.Title className="centertext">Alvin Finch</Card.Title>
               <Card.Text>
@@ -51,7 +51,7 @@ export const About = ({ match }) => (
         </Col>
         <Col>
           <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ffiles.websitebuilder.prositehosting.co.uk%2Ffasthosts11160%2Fimage%2Ftreadmill_repair_man_cut_out.jpg&f=1&nofb=1" alt="person" />
+            <Card.Img variant="top" src="./images/office.jpg" alt="person" />
             <Card.Body>
               <Card.Title className="centertext">Dustin Anderson</Card.Title>
               <Card.Text>

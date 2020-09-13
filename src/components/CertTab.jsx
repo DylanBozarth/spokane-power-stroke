@@ -12,81 +12,35 @@ export const CertTab = () => (
       <Tab>Dustin's Certifications</Tab>
     </TabList>
 
-    <TabPanel>
-      <Row>
-        <Card style={{ width: "14rem" }}>
-          <Card.Img variant="top" src="./images/alvincert.jpg" alt="person" />
-          <Card.Body>
-            <Card.Title className="centertext">Some place LLC</Card.Title>
-            <Card.Text>2020 he did gud</Card.Text>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: "14rem" }}>
-          <Card.Img variant="top" src="./images/alvincert.jpg" alt="person" />
-          <Card.Body>
-            <Card.Title className="centertext">Some place LLC</Card.Title>
-            <Card.Text>2020 he did gud</Card.Text>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: "14rem" }}>
-          <Card.Img variant="top" src="./images/alvincert.jpg" alt="person" />
-          <Card.Body>
-            <Card.Title className="centertext">Some place LLC</Card.Title>
-            <Card.Text>2020 he did gud</Card.Text>
-          </Card.Body>
-        </Card>
-      </Row>
-    </TabPanel>
-
-    <TabPanel>
-      <Row>
-        <Card style={{ width: "14rem" }}>
-          <Card.Img variant="top" src="./images/alvincert.jpg" alt="person" />
-          <Card.Body>
-            <Card.Title className="centertext">Some place LLC</Card.Title>
-            <Card.Text>2020 he did gud</Card.Text>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: "14rem" }}>
-          <Card.Img variant="top" src="./images/alvincert.jpg" alt="person" />
-          <Card.Body>
-            <Card.Title className="centertext">Some place LLC</Card.Title>
-            <Card.Text>2020 he did gud</Card.Text>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: "14rem" }}>
-          <Card.Img variant="top" src="./images/alvincert.jpg" alt="person" />
-          <Card.Body>
-            <Card.Title className="centertext">Some place LLC</Card.Title>
-            <Card.Text>2020 he did gud</Card.Text>
-          </Card.Body>
-        </Card>
-      </Row>
+    <TabPanel className="row certrow">
+      
+      <div className="col-sm-4">
+        <img width="200px" height="300px" src="./images/alvincert.jpg"></img>
+        <h1>cetifications</h1>
+      </div>
+      <div className="col-sm-4">
+        <img width="200px" height="300px" src="./images/alvincert.jpg"></img>
+        <h1>cetifications</h1>
+      </div>
+      <div className="col-sm-4">
+        <img width="200px" height="300px" src="./images/alvincert.jpg"></img>
+        <h1>cetifications</h1>
+      </div>
+ 
     </TabPanel>
     <TabPanel>
-    <Row>
-        <Card style={{ width: "14rem"}}>
-          <Card.Img variant="top" src="./images/alvincert.jpg" alt="person" />
-          <Card.Body>
-            <Card.Title className="centertext">Some place LLC</Card.Title>
-            <Card.Text>2020 he did gud</Card.Text>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: "14rem" }}>
-          <Card.Img variant="top" src="./images/alvincert.jpg" alt="person" />
-          <Card.Body>
-            <Card.Title className="centertext">Some place LLC</Card.Title>
-            <Card.Text>2020 he did gud</Card.Text>
-          </Card.Body>
-        </Card>
-        <Card style={{ width: "14rem" }}>
-          <Card.Img variant="top" src="./images/alvincert.jpg" alt="person" />
-          <Card.Body>
-            <Card.Title className="centertext">Some place LLC</Card.Title>
-            <Card.Text>2020 he did gud</Card.Text>
-          </Card.Body>
-        </Card>
-      </Row>
+      <div className="col-sm-12">
+        <img width="200px" height="300px" src="./images/alvincert.jpg"></img>
+        <h1>cetifications</h1>
+      </div>
+   
+    </TabPanel>
+    <TabPanel>
+      <div className="col-sm-12">
+        <img width="200px" height="300px" src="./images/alvincert.jpg"></img>
+        <h1>cetifications</h1>
+      </div>
+   
     </TabPanel>
   </Tabs>
 );

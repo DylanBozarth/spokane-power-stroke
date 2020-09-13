@@ -234,6 +234,11 @@ body::-webkit-scrollbar {
   -webkit-text-stroke: 2px firebrick;
 
 }
+.certrow {
+  flex: end;
+  margin-left: 10vw;
+  justify-content: center;
+}
 /* focus pages */ 
 .focusheader {
   font-size: 3rem;
