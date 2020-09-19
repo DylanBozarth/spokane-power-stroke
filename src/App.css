@@ -113,6 +113,7 @@ body::-webkit-scrollbar {
   padding-right: auto;
   margin-bottom: 13%;
   font-size: 2rem;
+  font-family: 'Oswald', sans-serif;
 }
 .gallery {
   padding: 25px;
@@ -229,10 +230,17 @@ body::-webkit-scrollbar {
 .mainheader {
   text-align: center;
   font-size: 2.8em;
-  color: whitesmoke;
+  color: #3a4fe7;
   font-family: "Oswald", sans-serif;
-  -webkit-text-stroke: 2px firebrick;
+  -webkit-text-stroke: 2px black;
 
+}
+.frontbox {
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  height: 2vh;
+  width: 100%;
+  background-color: white;
 }
 .card-body {
   text-align: center;

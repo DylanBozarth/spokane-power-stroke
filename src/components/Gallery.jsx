@@ -64,9 +64,13 @@ class Gallery extends Component {
   render() {
     return (
       <div className="gallery">
-        
-        <h1 className="mainheader">We specialize in ford powerstroke diesel, however we also have many years of experience in gas engines.  Foriegn and domestic 
-        <br />Here's what we offer</h1>
+        <h1 className="mainheader">
+          We specialize in ford powerstroke diesel, however we also have many
+          years of experience in gas engines. Foriegn and domestic
+          <br />
+          Here's what we offer
+        </h1>
+        <div className="frontbox"></div>
         <motion.div
           className="thumbnails"
           initial="initial"

@@ -41,7 +41,7 @@ export const Page2 = ({ match }) => (
       <Row className="justify-content-md-center">
         <motion.img
           variants={imageVariants}
-          src={"../images/rotor.jpg"}
+          src={"../images/gasengine.jpg"}
           alt="image"
           className="focusimage"
         />
