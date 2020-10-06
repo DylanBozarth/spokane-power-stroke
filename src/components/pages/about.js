@@ -29,7 +29,7 @@ export const About = () => (
           <img className=" img-fluid" src="./images/brandon.jpg" alt="Card image cap" />
           <div className="card-body">
             <h4 className="card-title">Brandon Bozarth</h4>
-            <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p className="card-text"></p>
             
           </div>
         </div>
@@ -39,7 +39,7 @@ export const About = () => (
           <img className=" img-fluid" src="./images/undertable.jpg" alt="Card image cap" />
           <div className="card-body">
             <h4 className="card-title">Dustin Anderson</h4>
-            <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p className="card-text"></p>
            
           </div>
         </div>
@@ -49,7 +49,7 @@ export const About = () => (
           <img className=" img-fluid" src="./images/office.jpg" alt="Card image cap" />
           <div className="card-body">
             <h4 className="card-title">Alvin Finch</h4>
-            <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p className="card-text"></p>
            
           </div>
         </div>

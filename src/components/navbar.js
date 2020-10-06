@@ -12,7 +12,7 @@ export const Nav = () => (
               <img
                 alt=""
                 src="./images/logonew.png"
-                width="110"
+                width="105"
                 height="105"
                 className="d-inline-block align-top icon"
               />{" "}
