@@ -1,7 +1,6 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 
-import { Row, Card } from "react-bootstrap";
 
 import React from "react";
 export const CertTab = () => (
