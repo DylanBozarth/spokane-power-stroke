@@ -5,10 +5,10 @@ import { Navbar } from "react-bootstrap";
 export const Nav = () => (
   <div className="navbarmaster">
     <>
-      <div className="row upperbar">
-        <Navbar className="">
+      <div className="row">
+        <div className="col-sm-4">
           <NavLink to="/">
-            <Navbar.Brand>
+           
               <img
                 alt=""
                 src="./images/logonew.png"
@@ -16,12 +16,12 @@ export const Nav = () => (
                 height="105"
                 className="d-inline-block align-top icon"
               />{" "}
-            </Navbar.Brand>
-          </NavLink>{" "}
-          <NavLink to="/">
-            <p className="maintitle">Spokane Power Stroke</p>
-          </NavLink>
-        </Navbar>
+           
+          <p className="maintitle">Spokane Power Stroke</p> </NavLink>{" "}
+        
+           
+          
+       </div>
 
         <div className="underbar row">
           <NavLink to="/">
