@@ -1,5 +1,5 @@
 body {
-  background-color: blue;
+ 
   max-width: 100%;
   
 }
@@ -204,9 +204,6 @@ body::-webkit-scrollbar {
 
 /* about page */
 
-.aboutslider {
-  margin-top: -0%;
-}
 
 /* contact page */
 .contactpage {
