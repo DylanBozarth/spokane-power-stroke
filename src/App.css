@@ -37,24 +37,20 @@ body::-webkit-scrollbar {
 }
 .underbar {
   align-items: center;
-  padding-left: 25vw;
+  padding-left: 1vw;
   flex-direction: row;
 }
+
 .navbaritem {
   text-align: center;
-  min-width: 250px;
-  flex-direction: row;
+  min-width: 205px;
   z-index: 99;
-  margin-bottom: -4%;
   font-family: "Oswald", sans-serif;
   -webkit-text-stroke: 1.4px firebrick;
   text-transform: uppercase;
   border: 1px solid white;
 }
-.underbar {
-  flex-direction: row;
-  display: inline-block
-}
+
 .navbaritem:hover {
   text-decoration: none;
 }
@@ -72,7 +68,12 @@ body::-webkit-scrollbar {
   background-size: 100% 100%;
   width: 100%;
   overflow: hidden;
-  display: inline-block
+  display: inline-block;
+  
+  margin-bottom: -1%;
+}
+.logocontainer {
+  text-align: center;
 }
 
 

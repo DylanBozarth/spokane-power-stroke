@@ -3,53 +3,50 @@ import { NavLink } from "react-router-dom";
 import { Navbar } from "react-bootstrap";
 
 export const Nav = () => (
-  <div className="navbarmaster">
-    <>
-      <div className="row upperbar">
-        <Navbar className="">
+  <div className="navbarmaster container-fluid">
+
+        <div className='container logocontainer'>
           <NavLink to="/">
             <Navbar.Brand>
               <img
                 alt=""
-                src="./images/logonew.png"
-                width="105"
-                height="105"
-                className="d-inline-block align-top icon"
+                src="./images/logotext.png"
+                
+                className="  col-lg-8  item"
               />{" "}
             </Navbar.Brand>
           </NavLink>{" "}
-          <NavLink to="/">
-            <p className="maintitle">Spokane Power Stroke</p>
-          </NavLink>
-        </Navbar>
+          </div>
+        
+     
 
-        <div className="underbar row">
+        <div className="row col-10 offset-1 col-lg-8 offset-lg-2 div-wrapper d-flex justify-content-center align-items-center">
           <NavLink to="/">
             {" "}
-            <Navbar.Brand className="navbaritem">
+            <div className="navbaritem col">
               <p className="navbarcolor">Services</p>
-            </Navbar.Brand>
+            </div>
           </NavLink>
           <NavLink to="/about">
-            <Navbar.Brand className="navbaritem">
+            <div className="navbaritem col">
               <p className="navbarcolor">About Us</p>
-            </Navbar.Brand>
+            </div>
           </NavLink>
           <NavLink to="/reviews">
             {" "}
-            <Navbar.Brand className="navbaritem">
+            <div className="navbaritem  col">
               <p className="navbarcolor">Reviews</p>
-            </Navbar.Brand>{" "}
+            </div>{" "}
           </NavLink>
 
           <NavLink to="/contact">
             {" "}
-            <Navbar.Brand className="navbaritem">
+            <div className="navbaritem col">
               <p className="navbarcolor">Contact Us</p>
-            </Navbar.Brand>
+            </div>
           </NavLink>
         </div>
-      </div>
-    </>
-  </div>
+    
+   </div>
+ 
 );
