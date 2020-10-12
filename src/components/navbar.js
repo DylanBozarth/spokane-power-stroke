@@ -3,11 +3,8 @@ import { NavLink } from "react-router-dom";
 import { Navbar } from "react-bootstrap";
 
 export const Nav = () => (
-  <div className="navbarmaster">
-    <>
-      <div className="row">
-        
-          <NavLink to="/" className="">
+  <div className="navbarmaster container-fluid">
+     <NavLink to="/" className="">
            
               <img
                 alt=""
@@ -18,11 +15,15 @@ export const Nav = () => (
               />{" "}
            
          </NavLink>{" "}
+    <>
+      <div className="underbar row">
+        
+          
         
            
           
 
-        <div className="underbar row">
+        
           <NavLink to="/">
             {" "}
             <Navbar.Brand className="navbaritem">
@@ -34,6 +35,7 @@ export const Nav = () => (
               <p className="navbarcolor">About Us</p>
             </Navbar.Brand>
           </NavLink>
+         
           <NavLink to="/reviews">
             {" "}
             <Navbar.Brand className="navbaritem">
@@ -48,7 +50,7 @@ export const Nav = () => (
             </Navbar.Brand>
           </NavLink>
         </div>
-      </div>
+      
     </>
   </div>
 );
