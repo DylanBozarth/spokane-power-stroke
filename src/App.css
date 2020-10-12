@@ -9,7 +9,9 @@ body::-webkit-scrollbar {
   display: none;
 }
 .icon {
-  position: relative;
+ 
+  display:flex;
+  margin-left: 10vw;
 }
 .App {
   background-color: white;

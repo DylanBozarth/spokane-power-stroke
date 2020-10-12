@@ -6,22 +6,21 @@ export const Nav = () => (
   <div className="navbarmaster">
     <>
       <div className="row">
-        <div className="col-sm-4">
-          <NavLink to="/">
+        
+          <NavLink to="/" className="">
            
               <img
                 alt=""
-                src="./images/logonew.png"
-                width="105"
-                height="105"
-                className="d-inline-block align-top icon"
+                src="./images/logotext.png"
+                width="210"
+                height="170"
+                className="icon"
               />{" "}
            
-          <p className="maintitle">Spokane Power Stroke</p> </NavLink>{" "}
+         </NavLink>{" "}
         
            
           
-       </div>
 
         <div className="underbar row">
           <NavLink to="/">
