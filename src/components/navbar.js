@@ -3,27 +3,27 @@ import { NavLink } from "react-router-dom";
 import { Navbar } from "react-bootstrap";
 
 export const Nav = () => (
-  <div className="navbarmaster container-fluid">
-     <NavLink to="/" className="">
-           
+  <div className="navbarmaster">
+    <>
+      <div className="row upperbar">
+        <Navbar className="">
+          <NavLink to="/">
+            <Navbar.Brand>
               <img
                 alt=""
-                src="./images/logotext.png"
-                width="210"
-                height="170"
-                className="icon"
+                src="./images/logonew.png"
+                width="105"
+                height="105"
+                className="d-inline-block align-top icon"
               />{" "}
-           
-         </NavLink>{" "}
-    <>
-      <div className="underbar row">
-        
-          
-        
-           
-          
+            </Navbar.Brand>
+          </NavLink>{" "}
+          <NavLink to="/">
+            <p className="maintitle">Spokane Power Stroke</p>
+          </NavLink>
+        </Navbar>
 
-        
+        <div className="underbar row">
           <NavLink to="/">
             {" "}
             <Navbar.Brand className="navbaritem">
@@ -35,7 +35,6 @@ export const Nav = () => (
               <p className="navbarcolor">About Us</p>
             </Navbar.Brand>
           </NavLink>
-         
           <NavLink to="/reviews">
             {" "}
             <Navbar.Brand className="navbaritem">
@@ -50,7 +49,7 @@ export const Nav = () => (
             </Navbar.Brand>
           </NavLink>
         </div>
-      
+      </div>
     </>
   </div>
 );
