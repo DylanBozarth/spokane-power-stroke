@@ -12,7 +12,7 @@ import {Page5} from './components/pages/page5'
 import {Page6} from './components/pages/page6'
 import { Footerthing } from './components/footer';
 import  Reviews  from './components/pages/reviews';
-import  About  from './components/pages/about';
+import { About}  from './components/pages/about';
 import { Contact } from './components/pages/contact';
 class App extends Component {
   constructor(props ) {
