@@ -14,10 +14,7 @@ body::-webkit-scrollbar {
 .App {
   background-color: white;
   color: #3d38ba;
-  max-width: 100%;
-  overflow: none;
-  margin-bottom: 10%;
-  overflow-x: none;
+  
 }
 /* nav bar */
 

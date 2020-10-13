@@ -38,7 +38,7 @@ image: "./images/brandon.jpg",
   render() {
     return (
       <motion.div
-        className="container-fluid"
+        className="container"
         initial="exit"
         animate="enter"
         exit="exit"
@@ -49,7 +49,7 @@ image: "./images/brandon.jpg",
         
         
           {this.state.items.map(({ name, desc, image }) => (
-            <div key={name} className="col-md-4" style={{ width: "18rem" }}>
+            <div key={name} className="col-sm-4" >
               <img className="img-fluid" src={image} alt={name} />
               <div className="card-body">
             <h4 className="card-title">{name}</h4>

@@ -87,7 +87,7 @@ class Reviews extends Component {
   render() {
     return (
       <motion.div
-        className="container-fluid"
+        className="container"
         initial="exit"
         animate="enter"
         exit="exit"
@@ -98,7 +98,7 @@ class Reviews extends Component {
         
         
           {this.state.items.map(({ name, desc }) => (
-            <div key={name} className="col-md-4" style={{ width: "18rem" }}>
+            <div key={name} className="col-md-4" >
               <img className="img-fluid" src="./images/stars.png" alt={name} />
               <div className="card-body">
             <h4 className="card-title">{name}</h4>
