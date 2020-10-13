@@ -88,18 +88,18 @@ class Reviews extends Component {
   render() {
     return (
       <motion.div
-        className="reviewmaster "
+        className="container"
         initial="exit"
         animate="enter"
         exit="exit"
         variants={backVariants}
       >
        <h1 className="centertext">What our customers are saying</h1> 
-       <Container className="col-sm-12 reviewspage row">
+       <Container className="row">
         
         
           {this.state.items.map(({ name, desc }) => (
-            <Card key={name} style={{ width: "18rem" }}>
+            <Card key={name} className="col-sm-4" style={{ width: "18rem" }}>
               <Card.Img variant="top" src="./images/stars.png" />
               <Card.Body>
                 <Card.Title className="title">{name}</Card.Title>

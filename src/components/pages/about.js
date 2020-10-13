@@ -12,16 +12,16 @@ const backVariants = {
 
 export const About = () => (
   <motion.div
-    className="mysingle"
+    className=""
     initial="exit"
     animate="enter"
     exit="exit"
     variants={backVariants}
   >
-    <div className="container-fluid aboutpage">
+    <div className="container aboutpage">
       <div className="row">
-      <div className="col-md-4 ">
-        <div className="card">
+      <div className="col-md-4">
+        <div className="">
           <img className=" img-fluid" src="./images/brandon.jpg" alt="Brandon" />
           <div className="card-body">
             <h4 className="card-title">Brandon Bozarth</h4>
@@ -31,7 +31,7 @@ export const About = () => (
         </div>
       </div>
       <div className="col-sm-4">
-        <div className="card">
+        <div className="">
           <img className=" img-fluid" src="./images/undertable.jpg" alt="Dustin" />
           <div className="card-body">
             <h4 className="card-title">Dustin Anderson</h4>
@@ -40,8 +40,8 @@ export const About = () => (
           </div>
         </div>
       </div>
-      <div className=" col-md-4 ">
-        <div className="card">
+      <div className="col-md-4">
+        <div className="">
           <img className=" img-fluid" src="./images/office.jpg" alt="Alvin" />
           <div className="card-body">
             <h4 className="card-title">Alvin Finch</h4>
