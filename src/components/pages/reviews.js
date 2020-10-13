@@ -99,7 +99,7 @@ class Reviews extends Component {
         
           {this.state.items.map(({ name, desc }) => (
             <div key={name} className="col-md-4" style={{ width: "18rem" }}>
-              <img className="img-fluid" src="./images/stars.png" />
+              <img className="img-fluid" src="./images/stars.png" alt={name} />
               <div className="card-body">
             <h4 className="card-title">{name}</h4>
             <p className="card-text">{desc}</p>
