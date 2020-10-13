@@ -18,9 +18,9 @@ export const About = () => (
     exit="exit"
     variants={backVariants}
   >
-    <div className=" aboutpage">
-      <div className="row">
-      <div className="col-lg-4"  style={{ width: "25rem" }}>
+    <div className="aboutpage row">
+      
+      <div className="col-lg">
         
           <img className="img-fluid" src="./images/brandon.jpg" alt="Brandon" />
           <div className="card-body">
@@ -30,7 +30,7 @@ export const About = () => (
           
         </div>
       </div>
-      <div className="col-lg-4"  style={{ width: "25rem" }}>
+      <div className="col-lg">
         
           <img className="img-fluid" src="./images/undertable.jpg" alt="Dustin" />
           <div className="card-body">
@@ -40,7 +40,7 @@ export const About = () => (
           
         </div>
       </div>
-      <div className="col-lg-4"  style={{ width: "25rem" }}>
+      <div className="col-lg">
         
           <img className="img-fluid" src="./images/office.jpg" alt="Alvin" />
           <div className="card-body">
@@ -50,6 +50,6 @@ export const About = () => (
           </div>
         
       </div>
-      </div></div>
+      </div>
   </motion.div>
 );
