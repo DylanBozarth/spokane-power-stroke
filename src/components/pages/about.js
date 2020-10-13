@@ -12,13 +12,13 @@ const backVariants = {
 
 export const About = () => (
   <motion.div
-    className=""
+    className="container-fluid"
     initial="exit"
     animate="enter"
     exit="exit"
     variants={backVariants}
   >
-    <div className="container aboutpage">
+    <div className=" aboutpage">
       <div className="row">
       <div className="col-md-4">
         <div className="">

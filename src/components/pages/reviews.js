@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Container, Card } from "react-bootstrap";
 import { motion } from "framer-motion";
 
 const transition = {
@@ -88,26 +87,27 @@ class Reviews extends Component {
   render() {
     return (
       <motion.div
-        className="container"
+        className="container-fluid"
         initial="exit"
         animate="enter"
         exit="exit"
         variants={backVariants}
       >
        <h1 className="centertext">What our customers are saying</h1> 
-       <Container className="row">
+       <div className="row">
         
         
           {this.state.items.map(({ name, desc }) => (
-            <Card key={name} className="col-sm-4" style={{ width: "18rem" }}>
-              <Card.Img variant="top" src="./images/stars.png" />
-              <Card.Body>
-                <Card.Title className="title">{name}</Card.Title>
-                <Card.Text className="cardtext">{desc}</Card.Text>
-              </Card.Body>
-            </Card>
+            <div key={name} className="col-md-4" style={{ width: "18rem" }}>
+              <img className="img-fluid" src="./images/stars.png" />
+              <div className="card-body">
+            <h4 className="card-title">{name}</h4>
+            <p className="card-text">{desc}</p>
+            
+          </div>
+            </div>
           ))}
-        </Container>
+        </div>
         <h3 className="centertext"><a href="https://www.google.com/search?source=hp&ei=LFgzX8HjLry90PEPkbWRkAI&q=spokane+power+stroke&oq=spokane+power+stroke&gs_lcp=CgZwc3ktYWIQAzILCC4QxwEQrwEQkwI6CAgAELEDEIMBOggILhCxAxCDAToICC4QxwEQowI6BQgAELEDOgsILhCxAxDHARCjAjoCCAA6AgguOggILhDHARCvAToNCAAQsQMQgwEQRhCAAjoFCC4QsQM6DgguELEDEIMBEMcBEK8BOgsILhCxAxDHARCvAToOCC4QsQMQgwEQxwEQowI6CwguELEDEIMBEJMCOgYIABAWEB46AggmUO4EWP8bYIYdaABwAHgCgAH6AogBiBeSAQg2LjExLjEuMpgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwjBqcSh05TrAhW8HjQIHZFaBCIQ4dUDCAk&uact=5#lrd=0x549e18d14732cc09:0xa4e83daf6423e967,1,,,">View the latest reviews on Google </a></h3>
       </motion.div>
     );
