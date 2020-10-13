@@ -203,7 +203,10 @@ body::-webkit-scrollbar {
 }
 
 /* about page */
-
+.aboutimage {
+  height: 35rem;
+  width: 40rem;
+}
 
 /* contact page */
 .contactpage {

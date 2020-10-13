@@ -20,9 +20,9 @@ export const About = () => (
   >
     <div className=" aboutpage">
       <div className="row">
-      <div className="col">
+      <div className="col-lg-4">
         
-          <img className=" img-fluid" src="./images/brandon.jpg" alt="Brandon" />
+          <img className="aboutimage" src="./images/brandon.jpg" alt="Brandon" />
           <div className="card-body">
             <h4 className="card-title">Brandon Bozarth</h4>
             <p className="card-text">Ford Certified Mechanic</p>
@@ -30,9 +30,9 @@ export const About = () => (
           
         </div>
       </div>
-      <div className="col">
+      <div className="col-lg-4">
         
-          <img className=" img-fluid" src="./images/undertable.jpg" alt="Dustin" />
+          <img className="aboutimage" src="./images/undertable.jpg" alt="Dustin" />
           <div className="card-body">
             <h4 className="card-title">Dustin Anderson</h4>
             <p className="card-text">Ford Certified Mechanic</p>
@@ -40,9 +40,9 @@ export const About = () => (
           
         </div>
       </div>
-      <div className="col">
+      <div className="col-lg-4">
         
-          <img className=" img-fluid" src="./images/office.jpg" alt="Alvin" />
+          <img className="aboutimage" src="./images/office.jpg" alt="Alvin" />
           <div className="card-body">
             <h4 className="card-title">Alvin Finch</h4>
             <p className="card-text">Ford Certified Mechanic</p>
