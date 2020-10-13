@@ -7,14 +7,14 @@ export const Nav = () => (
 
         <div className='container logocontainer'>
           <NavLink to="/">
-            <Navbar.Brand>
+            <div>
               <img
                 alt=""
                 src="./images/logotext.png"
                 
-                className="  col-lg-8  item"
+                className="img-fluid item"
               />{" "}
-            </Navbar.Brand>
+            </div>
           </NavLink>{" "}
           </div>
         

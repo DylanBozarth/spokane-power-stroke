@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Container, Col, Row, Image} from "react-bootstrap";
 const transition = {
   duration: 1,
   ease: [0.43, 0.13, 0.23, 0.96],
@@ -19,12 +18,12 @@ export const Contact = () => (
     exit="exit"
     variants={backVariants}
   >
-    <Container className="contactpage">
-      <Row>
-        <Col xs={12} md={8}>
-          <Image className="" src="./images/map.png" fluid></Image>
-        </Col>
-        <Col >
+    <div className="contactpage">
+      <div className="row">
+        <div >
+          <img className="img-fluid" src="./images/map.png" alt="map" />
+        </div>
+        <div >
           <p className="contactinfo">
             <i className="fa fa-phone" aria-hidden="true"></i> (509) 879-0391{" "}
             <br />
@@ -34,8 +33,8 @@ export const Contact = () => (
             <i className="fa fa-envelope" aria-hidden="true"></i>{" "}
             Spokanepowerstroke@gmail.com
           </p>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   </motion.div>
 );

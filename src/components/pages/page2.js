@@ -1,9 +1,7 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import { NavLink } from "react-router-dom";
-import { Container, Col, Row } from "react-bootstrap";
 
 const transition = {
   duration: 1,
@@ -25,7 +23,7 @@ const backVariants = {
 };
 
 export const Page2 = ({ match }) => (
-  <Container className="innerpage">
+  <div className="innerpage container">
     <motion.div
       className="single focuspage"
       initial="exit"
@@ -33,25 +31,25 @@ export const Page2 = ({ match }) => (
       exit="exit"
     >
       <motion.div className="back" variants={backVariants}>
-        <Link to="/" className="back">
+        <NavLink to="/" className="back">
           ← Back
-        </Link>
+        </NavLink>
       </motion.div>
       <h1 className="focusheader">Gas engine repair</h1>
-      <Row className="justify-content-md-center">
+      <div className="justify-content-md-center row">
         <motion.img
           variants={imageVariants}
           src={"../images/gasengine.jpg"}
           alt="image"
           className="focusimage"
         />
-      </Row>{" "}
-      <Row className="justify-content-md-center">
-        <Col className="focustext">
+      </div>{" "}
+      <div className="justify-content-md-center row">
+        <div className="focustext">
         We also are very proficent in servicing Gas engine vehicles from engine installs to driveability and maintence.
           <NavLink to="/contact" className="focuscontactus"><div className="focuscontactus">Contact us today!</div></NavLink>
-        </Col>
-      </Row>
+        </div>
+      </div>
     </motion.div>
-  </Container>
+  </div>
 );

@@ -208,22 +208,18 @@ body::-webkit-scrollbar {
 }
 
 /* about page */
-.aboutimage {
-  height: 35rem;
-  width: 40rem;
-}
+
 
 /* contact page */
 .contactpage {
-  overflow-x: hidden;
-  width: 100% !important;
-  margin-top: 3%;
+ margin-top: 1rem;
 }
 
 .contactinfo {
   
   font-size: 1.4rem;
- 
+ margin-left: 1rem;
+ margin-right: 1rem;
 }
 
 .mainheader {
