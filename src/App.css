@@ -201,7 +201,9 @@ body::-webkit-scrollbar {
 }
 
 /* about page */
-
+.col-md-4 {
+  min-width: 33%
+}
 
 /* contact page */
 .contactpage {
