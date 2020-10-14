@@ -2,50 +2,39 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 export const Nav = () => (
-  <div className="navbarmaster container-fluid">
-
-        <div className='container logocontainer'>
+  <div className="navbarmaster ">
+    <div className=" logocontainer">
+      <NavLink to="/">
+        <div>
+          <img alt="" src="./images/logotext.png" className=" " />{" "}
+        </div>
+      </NavLink>{" "}
+    </div>
+    <div className="container-fluid">
+      <div className="row ">
+        {" "}
+        <div className="navbaritem col-sm">
           <NavLink to="/">
-            <div>
-              <img
-                alt=""
-                src="./images/logotext.png"
-                
-                className="img-fluid item"
-              />{" "}
-            </div>
+            <p className="navbarcolor">Services</p>
           </NavLink>{" "}
-          </div>
-        
-     
-
-        <div className="row col-10 offset-1 col-lg-8 offset-lg-2 div-wrapper d-flex justify-content-center align-items-center">
-          <NavLink to="/">
-            {" "}
-            <div className="navbaritem col">
-              <p className="navbarcolor">Services</p>
-            </div>
-          </NavLink>
+        </div>
+        <div className="navbaritem  col-sm">
+          {" "}
           <NavLink to="/about">
-            <div className="navbaritem col">
-              <p className="navbarcolor">About Us</p>
-            </div>
+            <p className="navbarcolor">About Us</p>
           </NavLink>
+        </div>{" "}
+        <div className="navbaritem col-sm">
           <NavLink to="/reviews">
-            {" "}
-            <div className="navbaritem  col">
-              <p className="navbarcolor">Reviews</p>
-            </div>{" "}
-          </NavLink>
-
+            <p className="navbarcolor">Reviews</p>
+          </NavLink>{" "}
+        </div>{" "}
+        <div className="navbaritem col-sm">
           <NavLink to="/contact">
-            {" "}
-            <div className="navbaritem col">
-              <p className="navbarcolor">Contact Us</p>
-            </div>
+            <p className="navbarcolor">Contact Us</p>
           </NavLink>
         </div>
-    
-   </div>
- 
+      </div>
+    </div>
+  </div>
 );

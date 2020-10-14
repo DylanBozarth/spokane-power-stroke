@@ -1,4 +1,7 @@
 @import url("../node_modules/bootstrap/dist/css/bootstrap.min.css"); 
+body {
+  max-width: 100% !important;
+}
 body::-webkit-scrollbar {
   display: none;
 }
@@ -28,16 +31,9 @@ body::-webkit-scrollbar {
 .maintitle:hover {
   text-decoration-color: #3d38ba;
 }
-.underbar {
-  align-items: center;
-  padding-left: 1vw;
-  flex-direction: row;
-}
 
 .navbaritem {
   text-align: center;
-  min-width: 205px;
-  z-index: 99;
   font-family: "Oswald", sans-serif;
   -webkit-text-stroke: 1.4px firebrick;
   text-transform: uppercase;
@@ -52,7 +48,8 @@ body::-webkit-scrollbar {
 .navbarcolor {
   color: white;
   border-width: 100%;
-  font-size: 1.5rem;
+  -webkit-text-stroke: 1.4px firebrick;
+  font-size: 3.5vh;
 }
 .navbarcolor:hover {
   text-decoration: none;
@@ -62,13 +59,8 @@ body::-webkit-scrollbar {
 }
 .navbarmaster {
   background-image: url("./banner.jpg");
-  background-blend-mode: normal;
   background-size: 100% 100%;
-  width: 100%;
-  overflow: hidden;
-  display: inline-block;
-  
-  margin-bottom: -1%;
+  width: 100% !important;
 }
 .logocontainer {
   text-align: center;
@@ -162,7 +154,9 @@ body::-webkit-scrollbar {
 
     height: auto
   }
- 
+ .underbar {
+  text-align: center;
+ }
 }
 
 /* my css */
@@ -201,9 +195,7 @@ body::-webkit-scrollbar {
 }
 
 /* about page */
-.col-md-4 {
-  min-width: 33% !important
-}
+
 
 /* contact page */
 .contactpage {
