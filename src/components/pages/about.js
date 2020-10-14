@@ -12,7 +12,7 @@ const backVariants = {
 
 export const About = () => (
   <motion.div
-    className="mysingle"
+    className=""
     initial="exit"
     animate="enter"
     exit="exit"
