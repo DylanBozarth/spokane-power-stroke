@@ -222,8 +222,14 @@ body::-webkit-scrollbar {
 .card-body {
   text-align: center;
 }
+.card-title {
+  text-align: center;
+  font-size: 3rem;
+}
 .aboutpage {
   margin-top: 1rem;
+  padding-left: -1rem;
+  padding-right: -1rem;
 }
 .certrow {
   flex: end;

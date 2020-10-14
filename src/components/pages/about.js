@@ -12,7 +12,7 @@ const backVariants = {
 
 export const About = () => (
   <motion.div
-    className="container-fluid"
+    className="aboutpage"
     initial="exit"
     animate="enter"
     exit="exit"
@@ -20,23 +20,21 @@ export const About = () => (
   >
    
       <div className="row">
-        <div className="col">
+        <div className="col-lg-4">
           <img className="img-fluid" src="./images/brandon.jpg" alt="Brandon" />
 
           <h4 className="card-title">Brandon Bozarth</h4>
-          <p className="card-text">Ford Certified Mechanic</p>
         </div>
-        <div className="col">
+        <div className="col-lg-4">
           <img className="img-fluid" src="./images/undertable.jpg" alt="Dustin" />
 
           <h4 className="card-title">Dustin Anderson</h4>
-          <p className="card-text">Ford Certified Mechanic</p>
         </div>
-        <div className="col">
+        <div className="col-lg-4">
           <img className="img-fluid" src="./images/office.jpg" alt="Alvin" />
 
           <h4 className="card-title">Alvin Finch</h4>
-          <p className="card-text">Ford Certified Mechanic</p>
+          
         </div>
       </div>
     

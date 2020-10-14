@@ -98,13 +98,13 @@ class Reviews extends Component {
         
         
           {this.state.items.map(({ name, desc }) => (
-            <div key={name} className="col-md-4" >
+            <div key={name} className="col-lg-4" >
               <img className="img-fluid" src="./images/stars.png" alt={name} />
-              <div className="card-body">
+            
             <h4 className="card-title">{name}</h4>
             <p className="card-text">{desc}</p>
             
-          </div>
+         
             </div>
           ))}
         </div>
