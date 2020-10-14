@@ -87,7 +87,7 @@ class Reviews extends Component {
   render() {
     return (
       <motion.div
-        className=""
+        className="reviewpage"
         initial="exit"
         animate="enter"
         exit="exit"

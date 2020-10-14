@@ -224,12 +224,15 @@ body::-webkit-scrollbar {
 }
 .card-title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .aboutpage {
   margin-top: 1rem;
   padding-left: -1rem;
   padding-right: -1rem;
+}
+.reviewpage {
+  margin-bottom: 3rem;
 }
 .certrow {
   flex: end;
