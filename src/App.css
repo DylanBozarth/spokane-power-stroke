@@ -157,6 +157,7 @@ body::-webkit-scrollbar {
  .underbar {
   text-align: center;
  }
+ 
 }
 
 /* my css */
@@ -198,15 +199,10 @@ body::-webkit-scrollbar {
 
 
 /* contact page */
-.contactpage {
- margin-top: 1rem;
-}
+
 
 .contactinfo {
-  
-  font-size: 1.4rem;
- margin-left: 1rem;
- margin-right: 1rem;
+  text-align: center;
 }
 
 .mainheader {

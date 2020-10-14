@@ -18,13 +18,9 @@ export const Contact = () => (
     exit="exit"
     variants={backVariants}
   >
-    <div className="contactpage">
-      <div className="row">
-        <div >
-          <img className="img-fluid" src="./images/map.png" alt="map" />
-        </div>
-        <div >
-          <p className="contactinfo">
+    <div className=" container">
+     
+         <p className="contactinfo ">
             <i className="fa fa-phone" aria-hidden="true"></i> (509) 879-0391{" "}
             <br />
             <i className="fa fa-map-marker" aria-hidden="true"></i> 2833 N
@@ -33,7 +29,12 @@ export const Contact = () => (
             <i className="fa fa-envelope" aria-hidden="true"></i>{" "}
             Spokanepowerstroke@gmail.com
           </p>
-        </div>
+          
+          <img className="img-fluid " src="./images/map.png" alt="map" />
+        
+        <div >
+         
+        
       </div>
     </div>
   </motion.div>
