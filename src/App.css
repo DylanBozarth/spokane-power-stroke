@@ -1,4 +1,4 @@
-
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css"); 
 body::-webkit-scrollbar {
   display: none;
 }
@@ -202,7 +202,7 @@ body::-webkit-scrollbar {
 
 /* about page */
 .col-md-4 {
-  min-width: 33%
+  min-width: 33% !important
 }
 
 /* contact page */
