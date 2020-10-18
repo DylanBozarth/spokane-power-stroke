@@ -264,6 +264,7 @@ font-size: 2rem;
 }
 .focuspage {
   margin-top: 2%;
+  margin-bottom: 10vh;
 }
 .focusimage {
   width: 100vw;
@@ -278,7 +279,6 @@ font-size: 2rem;
   -webkit-text-stroke: 1.4px firebrick;
 }
 .focuscontactus {
-  margin-top: 3.4%;
   color: blue;
 }
 .focuscontactus:hover {

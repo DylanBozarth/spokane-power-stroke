@@ -41,7 +41,7 @@ export const Page3 = ({ match }) => (
           variants={imageVariants}
           src={"../images/brakenice.jpg"}
           alt="image"
-          className="focusimage"
+          className="focusimage img-fluid"
         />
       </div>{" "}
       <div className="justify-content-md-center row">
