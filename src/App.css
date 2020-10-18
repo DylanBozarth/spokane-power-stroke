@@ -231,6 +231,15 @@ body::-webkit-scrollbar {
   padding-left: -1rem;
   padding-right: -1rem;
 }
+.homecard:hover {
+  box-shadow: 0 20px 60px 0 rgba(0,0,0,.4);
+  -webkit-transform: translate(0,-10px);
+  transform: translate(0,-10px);
+}
+[class*=homecard]{
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
 .reviewpage {
   margin-bottom: 3rem;
 }

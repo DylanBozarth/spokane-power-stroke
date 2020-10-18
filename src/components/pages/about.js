@@ -21,19 +21,23 @@ export const About = () => (
    
       <div className="row">
         <div className="col-lg-4">
-          <img className="img-fluid" src="./images/brandon.jpg" alt="Brandon" />
+          <img className="img-fluid homecard" src="./images/brandon.jpg" alt="Brandon" />
 
           <h4 className="card-title">Brandon Bozarth</h4>
+          <img className="img-fluid homecard" src="./images/brandoncert.jpg" alt="cert" />
+
         </div>
         <div className="col-lg-4">
-          <img className="img-fluid" src="./images/undertable.jpg" alt="Dustin" />
+          <img className="img-fluid homecard" src="./images/undertable.jpg" alt="Dustin" />
 
           <h4 className="card-title">Dustin Anderson</h4>
+          <img className="img-fluid homecard" src="./images/dustincert.jpg" alt="Cert" />
         </div>
         <div className="col-lg-4">
-          <img className="img-fluid" src="./images/office.jpg" alt="Alvin" />
+          <img className="img-fluid homecard" src="./images/office.jpg" alt="Alvin" />
 
           <h4 className="card-title">Alvin Finch</h4>
+          <img className="img-fluid homecard" src="./images/alvincert.jpg" alt="cert" />
           
         </div>
       </div>
