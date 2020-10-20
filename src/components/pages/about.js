@@ -30,7 +30,7 @@ export const About = () => (
         <div className="col-lg-4">
           <img className="img-fluid homecard" src="./images/undertable.jpg" alt="Dustin" />
 
-          <h4 className="card-title">Dustin Anderson</h4>
+          <h4 className="card-title">Dustin Andersen</h4>
           <img className="img-fluid homecard" src="./images/dustincert.jpg" alt="Cert" />
         </div>
         <div className="col-lg-4">
