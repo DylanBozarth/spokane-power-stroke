@@ -22,6 +22,18 @@ class Reviews extends Component {
             "Best Ford Diesel mechanic shop in Spokane Washington, very easy going guys that are very easy to work with",
         },
         {
+name : "Glenn Jacklin",
+desc: "My wife and I were looking for used ford diesel pick up, a friend suggested I call Alvin for advice....we called him on Saturday morning, his day off, he took the call and spent an hour or more in the phone with us telling us what to look for, watch out for, etc.  downloaded major information to us, and we weren’t even a customer at the time.  Since then, I have taken it to Alvin for egr work, new head gasket and stud bolts, etc, and the work they have done has been flawless.... very knowledgeable and reasonably priced for sure!  Strong recommendation to use these guys."
+        },
+        {
+          name: "Ron Medlen",
+desc: "Excellent customer service. Great mechanical aptitude. If you want your work done right and at a better than dealer price, take your vehicle in to this Top Notch shop."
+        },
+        {
+name: "Chris Walsh",
+desc: "Al, Brandon and the guys that power stroke are the very best, excellent mechanics, fair rates, excellent service you won't do better than these guys."
+        },
+        {
           name: "Raymond Leonard",
 
           desc: "This shop is the best.   The first time I needed help Alvin actually talked me through doing the repair on the phone just to get me back on the road.  I wasn't  even a customer yet and he was willing to take the time.  Since then I have had several things looked at and repaired on my old 7.3 F350 and excursion.   Always helpful and reasonable prices and great work from the team.",
@@ -102,7 +114,7 @@ class Reviews extends Component {
               <img className="img-fluid" src="./images/stars.png" alt={name} />
             
             <h4 className="card-title">{name}</h4>
-            <p className="card-text">{desc}</p>
+            <p className="card-text text-center">{desc}</p>
             
          
             </div>
