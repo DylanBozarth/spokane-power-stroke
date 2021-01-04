@@ -15,6 +15,9 @@ body::-webkit-scrollbar {
   color: #3d38ba;
   
 }
+html {
+  scroll-behavior: smooth;
+}
 /* nav bar */
 
 .subtext {
