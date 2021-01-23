@@ -30,10 +30,10 @@ export const Contact = () => (
             Spokanepowerstroke@gmail.com
           </p>
           
-          <img className="img-fluid " src="./images/map.png" alt="map" />
-        
-        <div >
          
+        
+        <div className="map-container">
+        <iframe width="600" height="450" frameborder="0" style={{border:0}} title="map" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ98syR9EYnlQRSH85A1eUgVM&key=AIzaSyBL76VUe5YTyWkIaEgtb_-1Y5ztjRuchq4" allowfullscreen></iframe>
         
       </div>
     </div>
