@@ -18,29 +18,35 @@ export const About = () => (
     exit="exit"
     variants={backVariants}
   >
-   
+   <h3 className="text-center">Our Crew</h3>
       <div className="row">
         <div className="col-lg-4">
           <img className="img-fluid homecard" src="./images/brandon.jpg" alt="Brandon" />
 
           <h4 className="card-title">Brandon Bozarth</h4>
-          <img className="img-fluid homecard" src="./images/brandoncert.jpg" alt="cert" />
-
+         
         </div>
         <div className="col-lg-4">
           <img className="img-fluid homecard" src="./images/undertable.jpg" alt="Dustin" />
 
           <h4 className="card-title">Dustin Andersen</h4>
-          <img className="img-fluid homecard" src="./images/dustincert.jpg" alt="Cert" />
+          
         </div>
         <div className="col-lg-4">
           <img className="img-fluid homecard" src="./images/office.jpg" alt="Alvin" />
 
           <h4 className="card-title">Alvin Finch</h4>
-          <img className="img-fluid homecard" src="./images/alvincert.jpg" alt="cert" />
-          
+         
+          </div>
         </div>
-      </div>
+          <h3 className="text-center">Our Certifications</h3><div className="row"> 
+      
+        <img className="img-fluid homecard col-lg-4" src="./images/brandoncert.jpg" alt="cert" />
+        <img className="img-fluid homecard col-lg-4" src="./images/dustincert.jpg" alt="cert" />
+        <img className="img-fluid homecard col-lg-4" src="./images/alvincert.jpg" alt="cert" />
+</div>
+      
+      
     
   </motion.div>
 );
