@@ -12,13 +12,13 @@ const backVariants = {
 
 export const Contact = () => (
   <motion.div
-    className="mysingle"
+    className="mysingle "
     initial="exit"
     animate="enter"
     exit="exit"
     variants={backVariants}
   >
-    <div className=" container">
+    <div className=" container-fluid text-center contactpage">
       <p className="contactinfo ">
         <i className="fa fa-phone" aria-hidden="true"></i> (509) 879-0391 <br />
         <i className="fa fa-map-marker" aria-hidden="true"></i> 2833 N Pittsburg
@@ -30,8 +30,11 @@ export const Contact = () => (
 
       <div className="map-container">
       <div>
-     <iframe width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=47.66380000000001~-117.8935&lvl=11&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no" title="map">
+      <div>
+     <iframe width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=47.68442596126309~-117.38606404275737&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no" title="map">
      </iframe>
+     
+</div>
      
 </div>
       </div>
