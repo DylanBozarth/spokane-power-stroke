@@ -31,7 +31,7 @@ export const Contact = () => (
       <div className="map-container">
       <div>
       <div>
-     <iframe width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=47.68442596126309~-117.38606404275737&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no" title="map">
+     <iframe className="map" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=47.68442596126309~-117.38606404275737&lvl=16&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no" title="map">
      </iframe>
      
 </div>

@@ -68,7 +68,11 @@ html {
 .logocontainer {
   text-align: center;
 }
-
+.map {
+  height: 500px;
+  width: 500px;
+  max-width: 95vw;
+}
 .contactpage {
   height: 100vh;
 }
