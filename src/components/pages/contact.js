@@ -29,15 +29,11 @@ export const Contact = () => (
       </p>
 
       <div className="map-container">
-        <iframe
-          width="600"
-          height="450"
-          frameBorder="0"
-          style={{ border: 0 }}
-          title="map"
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:AIzaSyBL76VUe5YTyWkIaEgtb_-1Y5ztjRuchq4"
-          allowFullScreen
-        ></iframe>
+      <div>
+     <iframe width="500" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=47.66380000000001~-117.8935&lvl=11&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no" title="map">
+     </iframe>
+     
+</div>
       </div>
     </div>
   </motion.div>
