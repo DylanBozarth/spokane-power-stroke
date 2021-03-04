@@ -12,14 +12,14 @@ const backVariants = {
 
 export const Contact = () => (
   <motion.div
-    className="mysingle"
+    className=""
     initial="exit"
     animate="enter"
     exit="exit"
     variants={backVariants}
   >
-    <div className=" container">
-     
+    <div className=" container-fluid">
+     <div className="text-center">
          <p className="contactinfo ">
             <i className="fa fa-phone" aria-hidden="true"></i> (509) 879-0391{" "}
             <br />
@@ -30,10 +30,10 @@ export const Contact = () => (
             Spokanepowerstroke@gmail.com
           </p>
           
-          <img className="img-fluid " src="./images/map.png" alt="map" />
+          </div>
         
-        <div >
-         
+        <div className="text-center" >
+         <img className="img-fluid " src="./images/map.png" alt="map" />
         
       </div>
     </div>
