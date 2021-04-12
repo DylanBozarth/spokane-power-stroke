@@ -16,6 +16,14 @@ class Reviews extends Component {
     this.state = {
       items: [
         {
+          name: "Steve Stringham",
+          desc: "Alvin did a great job analyzing the performance and function of my 7.3L engine.  After his consultation I agreed on a repair plan and my truck is running better then it has in years.  Thank you Spokane Powerstroke!"
+        },
+        {
+          name: "Mr.Johnson",
+          desc: "Awesome place! Alvin knows his stuff. He has been working on Ford diesel's since the 90's before powerstroke came out. Glad to see him run this shop."
+        },
+        {
           name: "Brandon Johnson",
 
           desc:
