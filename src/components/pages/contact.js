@@ -12,7 +12,7 @@ const backVariants = {
 
 export const Contact = () => (
   <motion.div
-    className=""
+    className="contact-page"
     initial="exit"
     animate="enter"
     exit="exit"
