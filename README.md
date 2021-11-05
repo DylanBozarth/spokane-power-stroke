@@ -1,6 +1,4 @@
-https://www.youtube.com/watch?v=3dHNOWTI7H8 
-23:11
-
+# Spokanepowerstroke
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
 
