@@ -16,6 +16,9 @@ a {
 * {
   box-sizing: border-box;
 }
+.divider {
+  text-align: center;
+}
 .componentContainer {
   display: flex;
   flex-wrap: wrap;
