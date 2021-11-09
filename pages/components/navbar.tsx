@@ -3,3 +3,4 @@ export const Navbar = () => {
 <div>NAVIGATION</div>
     )
 }
+// mobile and desktop
