@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 export const Reviews = () => {
   const [items, setItems] = useState([
-      
     {
       Customer: "Blue Collar Trades LLC",
       desc: "They always do a great job!",
@@ -75,17 +74,16 @@ export const Reviews = () => {
 
       desc: "Spokane powerstroke service is top notch.  Unfortunately,  we have had to visit many Spokane diesel shops for repairs and this shop is by far the best. The service and diesel expertise this shop gave us was unprecedented.  This is the best diesel shop in town!!!",
     },
-      ])
-useEffect(( ) => {
-    console.log(items)
-})
+  ]);
+  useEffect(() => {
+    console.log(items);
+  });
   return (
     <div>
       {items.map(({Customer, desc}) => {
-        <div className="review">
-          <h4>{Customer}</h4>
-          <p>{desc}</p>
-        </div>;
+        return (
+          <div key={Customer}>{Customer}{desc}</div>
+        )
       })}
       <h1>speeveb</h1>
     </div>
