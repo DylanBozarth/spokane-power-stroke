@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 export const Reviews = () => {
+  const [open, setOpen] = useState(false)
   const [items, setItems] = useState([
     {
       Customer: "Blue Collar Trades LLC",
@@ -75,18 +76,33 @@ export const Reviews = () => {
       desc: "Spokane powerstroke service is top notch.  Unfortunately,  we have had to visit many Spokane diesel shops for repairs and this shop is by far the best. The service and diesel expertise this shop gave us was unprecedented.  This is the best diesel shop in town!!!",
     },
   ]);
-  useEffect(() => {
-    console.log(items);
-  });
-  return (
-    <div>
-      {items.map(({Customer, desc}) => {
+  
+ if (open === false) {
+   return (
+   <div>
+  
+      {items.slice(1, 3).map(({Customer, desc}) => {
         return (
           <div key={Customer}>{Customer}{desc}</div>
         )
       })}
-      <h1>speeveb</h1>
-    </div>
-  );
+       <button onClick={() => setOpen(!open)}>Open</button> 
+    </div> )
+ }  else {
+   return (
+   <div>{items.map(({Customer, desc}) => {
+      return (
+        <div key={Customer}> aaa{Customer}{desc}</div>
+      )
+    })}
+    
+ 
+    <button onClick={() => setOpen(!open)}>Open</button> 
+    
+  </div> ) }
+
+
+    
+  
 };
 // same as last time
