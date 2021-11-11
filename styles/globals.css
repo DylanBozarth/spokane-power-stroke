@@ -47,3 +47,7 @@ font-size: 3vh;
 .showReviews:hover {
   cursor: pointer;
 }
+.galleryImage {
+  width: auto;
+  height: auto;
+}
