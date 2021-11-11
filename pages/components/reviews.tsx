@@ -86,25 +86,26 @@ export const Reviews = () => {
       {items.slice(1, 4).map(({Customer, desc}) => {
         return (
           <div key={Customer} className="customerReview">
-            <Image src={stars} alt="customer-review" />
+            <Image src={stars}  alt="customer-review" />
             <h4>{Customer}</h4>
             <p>{desc}</p></div>
         )
       })}
-       <button onClick={() => setOpen(!open)}>Show all reviews</button> 
+       <div onClick={() => setOpen(!open)} className="showReviews">Show all reviews</div> 
     </div> )
  }  else {
    return (
-   <div>{items.map(({Customer, desc}) => {
+   <div><div onClick={() => setOpen(!open)}  className="showReviews">Collapse Reviews</div> {items.map(({Customer, desc}) => {
       return (
         <div key={Customer} className="customerReview">
+            <Image src={stars} alt="customer-review" />
             <h4>{Customer}</h4>
             <p>{desc}</p></div>
       )
     })}
     
  
-    <button onClick={() => setOpen(!open)}>Collapse Reviews</button> 
+    <div onClick={() => setOpen(!open)}  className="showReviews">Collapse Reviews</div> 
     
   </div> ) }
 

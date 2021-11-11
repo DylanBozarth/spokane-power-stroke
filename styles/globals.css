@@ -40,3 +40,10 @@ border: 1px solid #f76707;
 .customerReview {
   text-align: center;
 }
+.showReviews {
+  text-align: center;
+font-size: 3vh;
+}
+.showReviews:hover {
+  cursor: pointer;
+}
