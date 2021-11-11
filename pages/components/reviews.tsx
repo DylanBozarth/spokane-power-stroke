@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import Image from 'next/image'
+import stars from '../../public/assets/stars.png'
 export const Reviews = () => {
   const [open, setOpen] = useState(false)
   const [items, setItems] = useState([
@@ -81,23 +83,28 @@ export const Reviews = () => {
    return (
    <div>
   
-      {items.slice(1, 3).map(({Customer, desc}) => {
+      {items.slice(1, 4).map(({Customer, desc}) => {
         return (
-          <div key={Customer}>{Customer}{desc}</div>
+          <div key={Customer} className="customerReview">
+            <Image src={stars} alt="customer-review" />
+            <h4>{Customer}</h4>
+            <p>{desc}</p></div>
         )
       })}
-       <button onClick={() => setOpen(!open)}>Open</button> 
+       <button onClick={() => setOpen(!open)}>Show all reviews</button> 
     </div> )
  }  else {
    return (
    <div>{items.map(({Customer, desc}) => {
       return (
-        <div key={Customer}> aaa{Customer}{desc}</div>
+        <div key={Customer} className="customerReview">
+            <h4>{Customer}</h4>
+            <p>{desc}</p></div>
       )
     })}
     
  
-    <button onClick={() => setOpen(!open)}>Open</button> 
+    <button onClick={() => setOpen(!open)}>Collapse Reviews</button> 
     
   </div> ) }
 
