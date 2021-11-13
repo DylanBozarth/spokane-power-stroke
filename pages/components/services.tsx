@@ -1,9 +1,9 @@
 
 export const Services = () => {
     return (
-<div className="componentContainer">
+<div className="text-xl font-medium text-black">
 
-<div className="item">a</div><div className="item">a</div><div className="item">a</div><div className="item">a</div><div className="item">a</div><div className="item">a</div>
+<div className="text-xl font-medium text-black">a</div><div className="item">a</div><div className="item">a</div><div className="item">a</div><div className="item">a</div><div className="item">a</div>
 
 
 </div>

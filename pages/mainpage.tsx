@@ -7,7 +7,7 @@ import { Services } from "./components/services";
 export const MainPage = () => {
   return (
     <div>
-      <h1 className="divider" id="services">Having any of these problems? </h1>
+      <h1 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="services">Having any of these problems? </h1>
       <Services />
 
       <h1 className="divider" id="">

@@ -1,3 +1,7 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 html,
 body {
   padding: 0;
@@ -8,46 +12,6 @@ body {
     color: white;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
-* {
-  box-sizing: border-box;
-}
-.divider {
-  text-align: center;
-}
-.componentContainer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-.componentContainer > .item {
-  flex: 1 1 30%; /*grow | shrink | basis */
-  height: 100px;
-}
 
-.item {
 
-border: 1px solid #f76707;
-}
-.reviews {
-  color: white;
-}
-.customerReview {
-  text-align: center;
-}
-.showReviews {
-  text-align: center;
-font-size: 3vh;
-}
-.showReviews:hover {
-  cursor: pointer;
-}
-.galleryImage {
-  width: auto;
-  height: auto;
-}
