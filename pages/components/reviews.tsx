@@ -85,10 +85,10 @@ export const Reviews = () => {
   
       {items.slice(1, 4).map(({Customer, desc}) => {
         return (
-          <div key={Customer} className="customerReview">
-            <Image src={stars}  alt="customer-review" />
-            <h4>{Customer}</h4>
-            <p>{desc}</p></div>
+          <div key={Customer} className="container mx:auto text-center px-1 ">
+            <Image src={stars}  alt="powerstroke" />
+            <h4 className="font-sans text-large">{Customer}</h4>
+            <p className="font-serif">{desc}</p></div>
         )
       })}
        <div onClick={() => setOpen(!open)} className="showReviews">Show all reviews</div> 
@@ -97,8 +97,8 @@ export const Reviews = () => {
    return (
    <div><div onClick={() => setOpen(!open)}  className="showReviews">Collapse Reviews</div> {items.map(({Customer, desc}) => {
       return (
-        <div key={Customer} className="customerReview">
-            <Image src={stars} alt="customer-review" />
+        <div key={Customer} className="">
+            <Image src={stars} alt="" />
             <h4>{Customer}</h4>
             <p>{desc}</p></div>
       )
