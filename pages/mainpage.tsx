@@ -6,7 +6,7 @@ import { Services } from "./components/services";
 
 export const MainPage = () => {
   return (
-    <div>
+    <div className="container">
       <h1 className="text-center px:5 text-xl" id="services">Having any of these problems? </h1>
       <Services />
 

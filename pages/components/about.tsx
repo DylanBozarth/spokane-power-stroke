@@ -1,6 +1,6 @@
 export const About = () => {
     return (
-        <div>About uss</div>
+        <div className="grid grid-cols-3 gap-4 ">aaa </div>
     )
 }
 // their certifications and photos of them looking professional
