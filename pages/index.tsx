@@ -6,7 +6,7 @@ import { MainPage } from './mainpage'
 
 const Home: NextPage = () => {
   return (
-    <div className="">
+    <div className="container">
       <Head>
         <title>Spokane Power Stroke</title>
         <meta name="description" content="Spokane Power Stroke" />

@@ -1,19 +1,20 @@
-
+import {useState} from 'react'
 export const Services = () => {
+    const [active, setActive] = useState(0)
     return (
 <div className="flex flex-wrap -mx-1 lg:-mx-4 text-center">
       <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-     Problem 1</div>
+      Ford Powerstroke diesel repair</div>
       <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-      Problem 2</div>
+      Gas engine repair</div>
       <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-      Problem 3</div>
+      Brake Service</div>
       <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-      Problem 4</div>
+      Steering system repair</div>
       <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-      Problem 5</div>
+      Differentials</div>
       <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-      Problem 5</div>
+      General Diesel Maintinence</div>
     </div>
     )
 }
