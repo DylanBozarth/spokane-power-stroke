@@ -82,21 +82,21 @@ export const Reviews = () => {
             <p className="font-serif">{desc}</p></div>
         )
       })}
-       <div onClick={() => setOpen(!open)} className="showReviews">Show more reviews</div> 
+       <div onClick={() => setOpen(!open)} className="showReviews text-center">Show more reviews</div> 
     </div> )
  }  else {
    return (
-   <div><div onClick={() => setOpen(!open)}  className="showReviews">Collapse Reviews</div> {items.map(({Customer, desc}) => {
+   <div><div onClick={() => setOpen(!open)}  className="showReviews text-center">Collapse Reviews</div> {items.map(({Customer, desc}) => {
       return (
-        <div key={Customer} className="">
+        <div key={Customer} className="container mx:auto text-center px-1 ">
             <Image src={stars} alt="" />
-            <h4>{Customer}</h4>
-            <p>{desc}</p></div>
+            <h4 className="font-sans text-large">{Customer}</h4>
+            <p className="font-serif">{desc}</p></div>
       )
     })}
     
  
-    <div onClick={() => setOpen(!open)}  className="showReviews">Collapse Reviews</div> 
+    <div onClick={() => setOpen(!open)}  className="showReviews text-center">Collapse Reviews</div> 
     
   </div> ) }
 
