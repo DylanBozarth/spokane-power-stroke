@@ -62,16 +62,7 @@ export const Reviews = () => {
 
       desc: "Great service and communication from Alvin. He got my truck back on the road quickly and at a fair price. I really appreciate it thanks again!",
     },
-    {
-      Customer: "Kent Firestone",
-
-      desc: "Great job truck runs perfect",
-    },
-    {
-      Customer: "Timothy Daniels",
-
-      desc: "These guys are great.  They diagnosed the problem and had it fixed promptly.  And the price was fair!",
-    },
+    
     {
       Customer: "Pamela Murray",
 
@@ -91,7 +82,7 @@ export const Reviews = () => {
             <p className="font-serif">{desc}</p></div>
         )
       })}
-       <div onClick={() => setOpen(!open)} className="showReviews">Show all reviews</div> 
+       <div onClick={() => setOpen(!open)} className="showReviews">Show more reviews</div> 
     </div> )
  }  else {
    return (
