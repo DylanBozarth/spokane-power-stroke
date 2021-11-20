@@ -15,7 +15,8 @@
 .pointer:hover {
   cursor: pointer
 }
-
-
+.stayontop {
+  z-index: 99 !important
+}
 
 
