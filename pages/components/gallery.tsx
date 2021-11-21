@@ -1,19 +1,30 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Engine from "../../public/images/gasengine.jpg";
 import brake from "../../public/images/brakenice.jpg";
 import rotor from "../../public/images/rotor.jpg";
-export const Gallery = () => {
-  const [active, setActive] = useState(1);
+import { title } from "process";
+export const Gallery = (props: any) => {
+  let catagory: string = "";
+  let displayWork = [
+    { title: "aaa", image: "/public/images/gasstick.jpg", type: "Landscaping" },
+    { title: "aaa", image: "/public/images/gasstick.jpg", type: "Landscaping" },
+    { title: "aaa", image: "/public/images/gasstick.jpg", type: "Landscaping" },
+  ];
+
   return (
-    <div className="flex flex-wrap -mx-1 lg:-mx-4 z-1">
-      <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-      <Image src={Engine} alt="spokane-power-stroke" className="block h-auto w-full" /> </div>
-      <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-      <Image src={brake} alt="power stroke" className="block h-auto w-full" /></div>
-      <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-      <Image src={rotor} alt="power stroke" className="block h-auto w-full" /></div>
-    </div>
+    <div>
+    <h1> {catagory}</h1> 
+    <div className="" >
+      {displayWork.map((displayWork) => (
+        <div className="" key={title}>
+          {" "}
+          <br />
+          <p>{displayWork.title}</p>
+          <Image src={displayWork.image} layout="fill" alt={displayWork.title} />
+        </div>
+      ))}
+    </div></div>
   );
 };
 // photos of repairs with little tooltips

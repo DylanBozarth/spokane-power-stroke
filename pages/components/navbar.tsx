@@ -1,5 +1,5 @@
 import {useState} from 'react'
-export const Navbar = (props) => {
+export const Navbar = (props: any) => {
   
   return (
     <div className="flex flex-wrap -mx-1 lg:-mx-4 text-center sticky -top-0 z-99   bg-blue-500 stayontop">
