@@ -8,7 +8,7 @@ import { Navbar } from "./components/navbar";
 export const MainPage = () => {
   const [active, setActive] = useState(0)
   return (
-    <div className="">
+    <div className="p-1 ">
       <Navbar active={active} setActive={setActive} />
       <h1 className="text-center px:5 text-xl" id="services">Having any of these problems? </h1>
       <Services />
