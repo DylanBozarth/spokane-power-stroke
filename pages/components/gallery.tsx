@@ -7,7 +7,9 @@ import { title } from "process";
 export const Gallery = (props: any) => {
   let catagory: string = "";
   let displayWork = [
-    { title: "111", image: {Engine}, type: "Landscaping" },
+    { title: "111", image: Engine, type: "Landscaping" },
+    { title: "111", image: Engine, type: "Landscaping" },
+    { title: "111", image: Engine, type: "Landscaping" },
     
   ];
 
@@ -20,7 +22,7 @@ export const Gallery = (props: any) => {
           {" "}
           <br />
           <p>{displayWork.title}</p>
-          <Image src={Engine} layout="responsive" alt={displayWork.title} width="200" height="200" className="block h-auto w-full" />
+          <Image src={displayWork.image} layout="responsive" alt={displayWork.title} width="200" height="200" className="block h-auto w-full" />
         </div>
       ))}
     </div></div>
