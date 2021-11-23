@@ -14,7 +14,7 @@ export const MainPage = () => {
         <h1 className="text-center px:5 text-xl" id="services">
           Having any of these problems?{" "}
         </h1>
-        <Services />
+       
 
         <h1 className="text-center px-1 text-blue" id="">
           We service all kinds of trucks
