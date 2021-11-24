@@ -8,9 +8,11 @@ export const Gallery = (props: any) => {
   let catagory: string = "";
   const [active, setActive] = useState(0)
   let displayWork = [
-    { title: "111", image: Engine, type: "Landscaping" },
-    { title: "111", image: Engine, type: "Landscaping" },
-    { title: "111", image: Engine, type: "Landscaping" },
+    { title: "111", image: Engine, type: "powerstroke" },
+    { title: "111", image: Engine, type: "gas" },
+    { title: "111", image: Engine, type: "steering" },
+    { title: "111", image: Engine, type: "diff" },
+    { title: "111", image: Engine, type: "diesel" },
   ];
 
   return (
@@ -40,7 +42,7 @@ export const Gallery = (props: any) => {
     
     <div className="flex  ">
      
-        {displayWork.map((displayWork) => (
+        {displayWork.filter((x) => x.type !== "").map((displayWork) => (
           <div className="w-1/3 px-1" key={title}>
             {" "}
             <br />
