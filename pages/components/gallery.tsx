@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import Engine from "../../public/images/alvincert.jpg";
 import brake from "../../public/images/brakenice.jpg";
 import rotor from "../../public/images/rotor.jpg";
@@ -15,7 +15,9 @@ export const Gallery = (props: any) => {
     {  image: Engine, type: "diesel" },
     {  image: Engine, type: "brake" },
   ];
+useEffect(() => {
 
+}, [])
   return (
     <div>
       
