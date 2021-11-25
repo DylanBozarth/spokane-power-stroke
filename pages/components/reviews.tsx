@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Image from 'next/image'
 import stars from '../../public/assets/stars.png'
-export const Reviews = () => {
+export const Reviews = (props: any) => {
   const [open, setOpen] = useState(false)
   const [items, setItems] = useState([
     {

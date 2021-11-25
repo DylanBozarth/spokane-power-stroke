@@ -1,4 +1,4 @@
-export const Contact = () => {
+export const Contact = (props: any) => {
   return (
     <div className="flex  text-center  ">
       <h3 className="text-center">contact us </h3>

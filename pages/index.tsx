@@ -9,7 +9,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Spokane Power Stroke</title>
         <meta name="description" content="Spokane Power Stroke" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/assets/logonew.png" />
       </Head>
 
       

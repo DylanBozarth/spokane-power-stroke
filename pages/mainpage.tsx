@@ -18,19 +18,19 @@ export const MainPage = () => {
         <h1 className="text-center px-1 text-blue" id="">
           We service all kinds of trucks
         </h1>
-        <Services />
+        <Services active={active} setActive={setActive} />
         <h1 className="divider" id="crew">
           We have trained technicians ready to assist you
         </h1>
-        <About />
+        <About  active={active} setActive={setActive}  />
         <h1 className="divider" id="reviews">
           Hear from our satisfied customers
         </h1>
-        <Reviews />
+        <Reviews  active={active} setActive={setActive}  />
         <h1 className="divider" id="contact">
           Stop by our shop or give us a call
         </h1>
-        <Contact />
+        <Contact  active={active} setActive={setActive}  />
       </div>
     </div>
   );
