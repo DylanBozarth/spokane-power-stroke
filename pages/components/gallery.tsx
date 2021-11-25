@@ -1,19 +1,22 @@
 import Image from "next/image";
 import { useMemo, useState, useEffect } from "react";
-import Engine from "../../public/images/alvincert.jpg";
-import brake from "../../public/images/brakenice.jpg";
-import rotor from "../../public/images/rotor.jpg";
+import diesel1 from "../../public/carWork/dieselengine.jpg";
+import brake1 from "../../public/carWork/brake1.jpg";
+import steering1 from "../../public/carWork/steering.jpg";
+import gas1 from "../../public/carWork/gasengine.jpg";
+import diff1 from "../../public/carWork/sexyengine.jpg";
+import powerstroke1 from "../../public/carWork/truckengine.jpg";
 import { title } from "process";
 export const Gallery = (props: any) => {
   const [catagory, setCatagory] = useState('base')
   const [active, setActive] = useState(0)
   let displayWork = [
-    {  image: Engine, type: "powerstroke" },
-    {  image: brake, type: "gas" },
-    {  image: Engine, type: "steering" },
-    {  image: rotor, type: "diff" },
-    {  image: Engine, type: "diesel" },
-    {  image: Engine, type: "brake" },
+    {  image: powerstroke1, type: "powerstroke" },
+    {  image: gas1, type: "gas" },
+    {  image: steering1, type: "steering" },
+    {  image: diff1, type: "diff" },
+    {  image: diesel1, type: "diesel" },
+    {  image: brake1, type: "brake" },
   ];
 useEffect(() => {
 
@@ -30,16 +33,16 @@ useEffect(() => {
       Gas engine repair
       <p className={active  === 2 ? 'text' : 'hidden'}>Additional information</p></div>
       <div className="pointer my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3" onClick={() => {setActive(3), setCatagory('steering')}}>
-      Brake Service
+      Steering system repair
       <p className={active  === 3 ? 'text' : 'hidden'}>Additional information</p></div>
       <div className="pointer my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3" onClick={() => {setActive(4), setCatagory('diff')}}>
-      Steering system repair
+     Differentials
       <p className={active  === 4 ? 'text' : 'hidden'}>Additional information</p></div>
       <div className="pointer my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3" onClick={() => {setActive(5), setCatagory('diesel')}}>
-      Differentials
+     Diesel Matinence
       <p className={active  === 5 ? 'text' : 'hidden'}>Additional information</p></div>
       <div className="pointer -1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3" onClick={() => {setActive(6), setCatagory('brake')}}>
-      General Diesel Maintinence
+      Brake Service
       <p className={active  === 6 ? 'text' : 'hidden'}>Additional information</p></div>
     </div>
     
