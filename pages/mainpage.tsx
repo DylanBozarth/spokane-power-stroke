@@ -1,8 +1,7 @@
 import { About } from "./components/about";
 import { Contact } from "./components/contact";
-import { Gallery } from "./components/gallery";
-import { Reviews } from "./components/reviews";
 import { Services } from "./components/services";
+import { Reviews } from "./components/reviews";
 import { useState } from "react";
 import { Navbar } from "./components/navbar";
 export const MainPage = () => {
@@ -19,7 +18,7 @@ export const MainPage = () => {
         <h1 className="text-center px-1 text-blue" id="">
           We service all kinds of trucks
         </h1>
-        <Gallery />
+        <Services />
         <h1 className="divider" id="crew">
           We have trained technicians ready to assist you
         </h1>
