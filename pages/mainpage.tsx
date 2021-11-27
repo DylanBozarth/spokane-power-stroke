@@ -15,7 +15,7 @@ export const MainPage = () => {
       <div className="py-10">
         <div className="flex justify-center">
         <Image src={Logo} className="justify-center"  alt="spokane power stroke" /></div>
-        <h1 className="text-center px-1 text-xl  bg-blue-500 text-white " id="services">
+        <h1 className="text-center px-5 text-xl  bg-blue-500 text-white " id="services">
           Having any of these problems?{" "}
         </h1>
        
