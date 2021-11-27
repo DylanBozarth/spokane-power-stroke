@@ -82,7 +82,7 @@ export const Reviews = (props: any) => {
             <p className="font-serif">{desc}</p></div>
         )
       })}
-       <div onClick={() => setOpen(!open)} className="showReviews text-center">Show more reviews</div> 
+       <div onClick={() => setOpen(!open)} className="showReviews text-center"  id="contact">Show more reviews</div> 
     </div> )
  }  else {
    return (

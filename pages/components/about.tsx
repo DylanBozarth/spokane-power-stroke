@@ -11,10 +11,10 @@ export const About = (props: any) => {
       
       <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
       Alvin Finch
-      <Image src={Alvin}  alt="mechanic" /><h3>Certified Badass</h3></div>
+      <Image src={Alvin}  alt="mechanic" /><h3 id="reviews">Certified Badass</h3 ></div>
       <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
       Dustin LastName
-      <Image src={Dustin}  alt="mechanic" /><h3>Certified Badass</h3></div>
+      <Image src={Dustin}  alt="mechanic" /><h3>Certified Badass</h3 ></div>
     </div>
     )
 }
