@@ -1,9 +1,9 @@
-import { About } from "./components/about";
-import { Contact } from "./components/contact";
-import { Services } from "./components/services";
-import { Reviews } from "./components/reviews";
+import { About } from "../components/about";
+import { Contact } from "../components/contact";
+import { Services } from "../components/services";
+import { Reviews } from "../components/reviews";
 import { useState } from "react";
-import { Navbar } from "./components/navbar";
+import { Navbar } from "../components/navbar";
 import Image from "next/image";
 import Logo from '../public/assets/logotext.png'
 export const MainPage = () => {

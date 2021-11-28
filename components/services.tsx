@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { useMemo, useState, useEffect } from "react";
-import diesel1 from "../../public/carWork/dieselengine.jpg";
-import brake1 from "../../public/carWork/brake1.jpg";
-import steering1 from "../../public/carWork/steering.jpg";
-import gas1 from "../../public/carWork/gasengine.jpg";
-import diff1 from "../../public/carWork/sexyengine.jpg";
-import powerstroke1 from "../../public/carWork/truckengine.jpg";
-import sample from "../../public/carWork/sexyengine.jpg";
+import diesel1 from "../public/carWork/dieselengine.jpg";
+import brake1 from "../public/carWork/brake1.jpg";
+import steering1 from "../public/carWork/steering.jpg";
+import gas1 from "../public/carWork/gasengine.jpg";
+import diff1 from "../public/carWork/sexyengine.jpg";
+import powerstroke1 from "../public/carWork/truckengine.jpg";
+import sample from "../public/carWork/sexyengine.jpg";
 import { title } from "process";
 export const Services = (props: any) => {
   const [catagory, setCatagory] = useState("base");
