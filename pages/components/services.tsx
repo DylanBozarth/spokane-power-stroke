@@ -23,9 +23,9 @@ export const Services = (props: any) => {
   useEffect(() => {}, []);
   return (
     <div>
-      <div className="flex flex-wrap  lg:-mx-4 text-center ">
+      <div className="flex flex-wrap  lg:-mx-4 text-center  ">
         <div
-          className="pointer bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 "
+          className="pointer border-2 border-blue-500 hover:bg-blue-100 text-blue-500 font-bold py-2 px-4 rounded w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 "
           onClick={() => {
             setActive(1), setCatagory("powerstroke");
           }}
@@ -33,7 +33,7 @@ export const Services = (props: any) => {
           Ford Powerstroke diesel repair
         </div>
         <div
-          className="pointer bg-blue-500 hover:bg-blue-700 text-white font-bold  rounded w-full w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3"
+          className="pointer border-2 border-blue-500 hover:bg-blue-100 text-blue-500 font-bold py-2 px-4 rounded w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 "
           onClick={() => {
             setActive(2), setCatagory("gas");
           }}
@@ -41,7 +41,7 @@ export const Services = (props: any) => {
           Gas engine repair
         </div>
         <div
-          className="pointer bg-blue-500 hover:bg-blue-700 text-white font-bold  rounded w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3"
+          className="pointer border-2 border-blue-500 hover:bg-blue-100 text-blue-500 font-bold py-2 px-4 rounded w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 "
           onClick={() => {
             setActive(3), setCatagory("steering");
           }}
@@ -49,7 +49,7 @@ export const Services = (props: any) => {
           Steering system repair
         </div>
         <div
-          className="pointer bg-blue-500 hover:bg-blue-700 text-white font-bold  rounded w-full w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3"
+          className="pointer border-2 border-blue-500 hover:bg-blue-100 text-blue-500 font-bold py-2 px-4 rounded w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 "
           onClick={() => {
             setActive(4), setCatagory("diff");
           }}
@@ -57,7 +57,7 @@ export const Services = (props: any) => {
           Differentials
         </div>
         <div
-          className="pointer bg-blue-500 hover:bg-blue-700 text-white font-bold  rounded w-full w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3"
+          className="pointer border-2 border-blue-500 hover:bg-blue-100 text-blue-500 font-bold py-2 px-4 rounded w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 "
           onClick={() => {
             setActive(5), setCatagory("diesel");
           }}
@@ -65,7 +65,7 @@ export const Services = (props: any) => {
           Diesel Matinence
         </div>
         <div
-          className="pointer bg-blue-500 hover:bg-blue-700 text-white font-bold   rounded w-full w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3"
+          className="pointer border-2 border-blue-500 hover:bg-blue-100 text-blue-500 font-bold py-2 px-4 rounded w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 "
           onClick={() => {
             setActive(6), setCatagory("brake");
           }}
