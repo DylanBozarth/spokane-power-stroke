@@ -1,8 +1,8 @@
 export const Contact = (props: any) => {
   return (
-    <div className="container">
+    <div className=" flex">
       
-      <div className="w-1/2 py-5">
+      <div className=" py-6 ">
       <iframe
         loading="lazy"
         className=""

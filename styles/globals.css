@@ -13,12 +13,7 @@ body::-webkit-scrollbar {
 .hidden {
   display: none;
 }
-.showReviews {
-  display: block;
-}
-.showReviews:hover {
-  cursor: pointer;
-}
+
 .pointer:hover {
   cursor: pointer
 }

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import Image from 'next/image'
-import stars from '../../public/assets/stars.png'
+import Image from "next/image";
+import stars from "../../public/assets/stars.png";
 export const Reviews = (props: any) => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   const [items, setItems] = useState([
     {
       Customer: "Blue Collar Trades LLC",
@@ -62,46 +62,55 @@ export const Reviews = (props: any) => {
 
       desc: "Great service and communication from Alvin. He got my truck back on the road quickly and at a fair price. I really appreciate it thanks again!",
     },
-    
+
     {
       Customer: "Pamela Murray",
 
       desc: "Spokane powerstroke service is top notch.  Unfortunately,  we have had to visit many Spokane diesel shops for repairs and this shop is by far the best. The service and diesel expertise this shop gave us was unprecedented.  This is the best diesel shop in town!!!",
     },
   ]);
-  
- if (open === false) {
-   return (
-   <div>
-  
-      {items.slice(1, 4).map(({Customer, desc}) => {
-        return (
-          <div key={Customer} className="container mx:auto text-center px-1 ">
-            <Image src={stars}  alt="powerstroke" />
-            <h4 className="font-sans text-large">{Customer}</h4>
-            <p className="font-serif">{desc}</p></div>
-        )
-      })}
-       <div onClick={() => setOpen(!open)} className="showReviews text-center"  id="contact">Show more reviews</div> 
-    </div> )
- }  else {
-   return (
-   <div><div onClick={() => setOpen(!open)}  className="showReviews text-center">Collapse Reviews</div> {items.map(({Customer, desc}) => {
-      return (
-        <div key={Customer} className="container mx:auto text-center px-1 ">
-            <Image src={stars} alt="" />
-            <h4 className="font-sans text-large">{Customer}</h4>
-            <p className="font-serif">{desc}</p></div>
-      )
-    })}
-    
- 
-    <div onClick={() => setOpen(!open)}  className="showReviews text-center">Collapse Reviews</div> 
-    
-  </div> ) }
 
-
-    
-  
+  if (open === false) {
+    return (
+      <div>
+        {items.slice(1, 4).map(({ Customer, desc }) => {
+          return (
+            <div key={Customer} className="container mx:auto text-center px-1 ">
+              <Image src={stars} alt="powerstroke" />
+              <h4 className="font-sans text-large">{Customer}</h4>
+              <p className="font-serif">{desc}</p>
+            </div>
+          );
+        })}
+        <div
+          onClick={() => setOpen(!open)}
+          className="pointer border-2 border-blue-500 hover:bg-blue-100 text-blue-500 font-bold py-2 px-2 rounded w-1/3  text-center mx-auto "
+          id="contact"
+        >
+          Show more reviews
+        </div>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <div onClick={() => setOpen(!open)} className="pointer border-2 border-blue-500 hover:bg-blue-100 text-blue-500 font-bold py-2 px-4 rounded w-1/3  text-center mx-auto">
+          Collapse Reviews
+        </div>{" "}
+        {items.map(({ Customer, desc }) => {
+          return (
+            <div key={Customer} className="container mx:auto text-center px-1 ">
+              <Image src={stars} alt="" />
+              <h4 className="font-sans text-large">{Customer}</h4>
+              <p className="font-serif">{desc}</p>
+            </div>
+          );
+        })}
+        <div onClick={() => setOpen(!open)} className="pointer border-2 border-blue-500 hover:bg-blue-100 text-blue-500 font-bold py-2 px-4 rounded w-1/3  text-center mx-auto">
+          Collapse Reviews
+        </div>
+      </div>
+    );
+  }
 };
 // same as last time
