@@ -20,6 +20,7 @@ body::-webkit-scrollbar {
 .stayontop {
   z-index: 99 !important
 }
+// This just wouldnt work with tailwind 
 .mapContainer {
   position: relative;
   overflow: hidden;
@@ -27,7 +28,6 @@ body::-webkit-scrollbar {
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
-/* Then style the iframe to fit in the container div with full height and width */
 .map {
   position: absolute;
   top: 0;
