@@ -6,6 +6,9 @@ import { useState } from "react";
 import { Navbar } from "./navbar";
 import Image from "next/image";
 import Logo from '../public/assets/logotext.png'
+import { gsap} from "gsap";
+
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 export const MainPage = () => {
   const [active, setActive] = useState(0);
   return (
