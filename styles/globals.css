@@ -21,15 +21,18 @@ body::-webkit-scrollbar {
   z-index: 99 !important
 }
 // This just wouldnt work with tailwind 
+.non-contact {
+  position: absolute;
+}
 .mapContainer {
   position: relative;
   overflow: hidden;
   width: 100vw;
-  padding-top: 156.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  height: 50vh;
 }
 
 .map {
-  position: absolute;
+ position: absolute;
   top: 0;
   left: 0;
   bottom: 0;

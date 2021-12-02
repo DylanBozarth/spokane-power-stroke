@@ -15,6 +15,7 @@ export const MainPage = () => {
       <Navbar active={active} setActive={setActive} />
       
       <div className="py-9">
+        <div className="non-contact">
         <div className="flex justify-center"  id="services">
         <Image src={Logo} className="justify-center"  alt="spokane power stroke" /></div>
         <h1 className="text-center px-5 text-xl  bg-blue-500 text-white ">
@@ -34,7 +35,7 @@ export const MainPage = () => {
         <Reviews  active={active} setActive={setActive}  />
         <h1 className="text-center px-1  bg-blue-500 text-white"  >
           Stop by our shop or give us a call
-        </h1>
+        </h1></div>
         <Contact  active={active} setActive={setActive}  />
       </div>
     </div>
