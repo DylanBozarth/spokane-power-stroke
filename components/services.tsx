@@ -17,6 +17,7 @@ export const Services = (props: any) => {
     { image: steering1, type: "steering" },
     { image: diff1, type: "diff" },
     { image: diesel1, type: "diesel" },
+    
     { image: brake1, type: "brake" },
     { image: sample, type: "base" },
   ];
@@ -103,7 +104,7 @@ export const Services = (props: any) => {
                 src={displayWork.image}
                 layout="responsive"
                 alt="powerstroke"
-                className="block h-auto w-full"
+                className=""
               />
             </div>
           ))}
