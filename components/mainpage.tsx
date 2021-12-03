@@ -18,21 +18,21 @@ export const MainPage = (props: any) => {
         <div className="non-contact">
         <div className="flex justify-center"  id="services">
         <Image src={Logo} className="justify-center"  alt="spokane power stroke" /></div>
-        <h1 className="text-center px-5 text-xl  bg-blue-500 text-white ">
+        <h1 className="text-center px-5 text-xl  bg-blue-500 text-white  m-2">
           Having any of these problems?{" "}
         </h1>
-       Active is: {active} 
+       
        
         <Services active={active} setActive={setActive}  />
-        <h1 className="text-center px-1 py-1  bg-blue-500 text-white" id="crew" >
+        <h1 className="text-center px-1 py-1  bg-blue-500 text-white m-2" id="crew"  >
           We have trained technicians ready to assist you
         </h1>
         <About  active={active} setActive={setActive}  />
-        <h1 className="text-center px-1  bg-blue-500 text-white"  >
+        <h1 className="text-center px-1  bg-blue-500 text-white m-2"  >
           Hear from our satisfied customers
         </h1>
         <Reviews  active={active} setActive={setActive}  />
-        <h1 className="text-center px-1  bg-blue-500 text-white"  >
+        <h1 className="text-center px-1  bg-blue-500 text-white m-2"  >
           Stop by our shop or give us a call
         </h1></div>
         <Contact  active={active} setActive={setActive}  />
