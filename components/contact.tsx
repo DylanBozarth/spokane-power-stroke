@@ -4,24 +4,18 @@ import { gsap} from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 export const Contact = (props: any) => {
   gsap.registerPlugin(ScrollTrigger);
-  const changeTheBar = () => {
-    props.setActive(4)
-    
-    
-  }
+ 
   const NavBarChange = () => {
     ScrollTrigger.create({
       trigger: ".contact",
-      onEnter: changeTheBar,
-      //onLeave: resetTheBar,
-      onEnterBack: changeTheBar,
+      onEnter: props.setActive(4)
     });
   }
   useEffect(() => {
     NavBarChange()
   })
   return (
-    <div className=" flex contact">
+    <div className="contact">
 
       
       <div className="mapContainer">
