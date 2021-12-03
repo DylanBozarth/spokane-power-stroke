@@ -4,9 +4,9 @@ import diesel1 from "../public/carWork/dieselengine.jpg";
 import brake1 from "../public/carWork/brake1.jpg";
 import steering1 from "../public/carWork/steering.jpg";
 import gas1 from "../public/carWork/gasengine.jpg";
-import diff1 from "../public/carWork/sexyengine.jpg";
+import diff1 from "../public/carWork/diff1.jpg";
 import powerstroke1 from "../public/carWork/truckengine.jpg";
-import sample from "../public/carWork/sexyengine.jpg";
+import sample from "../public/carWork/shop.jpg";
 import { title } from "process";
 export const Services = (props: any) => {
   const [catagory, setCatagory] = useState("base");
@@ -20,6 +20,7 @@ export const Services = (props: any) => {
     { image: brake1, type: "brake" },
     { image: sample, type: "base" },
   ];
+
   useEffect(() => {}, []);
   return (
     <div>
@@ -74,22 +75,22 @@ export const Services = (props: any) => {
         </div>
       </div>
       <p className={activeService === 1 ? "text-center" : "hidden"}>
-        Additional information about powerstrokes
+      We mainly specialise in Ford powerstroke diesel repair. Everything from full engine rebuilds to basic maintence.
       </p>
       <p className={activeService === 2 ? "text-center" : "hidden"}>
-        Additional information about Gas engines
+      We also are very proficent in servicing Gas engine vehicles from engine installs to driveability and maintence.
       </p>
       <p className={activeService === 3 ? "text-center" : "hidden"}>
-        Additional information about Steering systems
+      Does your Truck or car&apos;s steering not feel quite right? Or makes noise? We can fix it.
       </p>
       <p className={activeService === 4 ? "text-center" : "hidden"}>
-        Additional information about Differentials
+      We also service and repair ford differentials.
       </p>
       <p className={activeService === 5 ? "text-center" : "hidden"}>
-        Additional information about Diesel engines
+      Is the &apos;check engine&apos; light on? Your Truck running rough? Noise from the engine? We can fix it.
       </p>
       <p className={activeService === 6 ? "text-center" : "hidden"}>
-        Additional information about Brakes
+      We also service brakes all makes and models.
       </p>
       <div className="flex  " > 
         {displayWork
