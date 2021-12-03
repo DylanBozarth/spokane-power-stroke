@@ -8,7 +8,7 @@ export const Contact = (props: any) => {
   const NavBarChange = () => {
     ScrollTrigger.create({
       trigger: ".contact",
-      onEnter: props.setActive(4)
+     
     });
   }
   useEffect(() => {

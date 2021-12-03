@@ -8,24 +8,23 @@ import Image from "next/image";
 import Logo from '../public/assets/logotext.png'
 import { gsap} from "gsap";
 
-export const MainPage = () => {
-  const [active, setActive] = useState(0);
+export const MainPage = (props: any) => {
+  const [active, setActive] = useState(0)
   return (
     <div className="p-1 ">
       <Navbar active={active} setActive={setActive} />
-      
-      <div className="py-9">
+    
+      <div className="py-9"> 
         <div className="non-contact">
         <div className="flex justify-center"  id="services">
         <Image src={Logo} className="justify-center"  alt="spokane power stroke" /></div>
         <h1 className="text-center px-5 text-xl  bg-blue-500 text-white ">
           Having any of these problems?{" "}
         </h1>
-       
-
+       Active is: {active} 
        
         <Services active={active} setActive={setActive}  />
-        <h1 className="text-center px-1 py-1  bg-blue-500 text-white" >
+        <h1 className="text-center px-1 py-1  bg-blue-500 text-white" id="crew" >
           We have trained technicians ready to assist you
         </h1>
         <About  active={active} setActive={setActive}  />

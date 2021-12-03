@@ -20,6 +20,9 @@ body::-webkit-scrollbar {
 .stayontop {
   z-index: 99 !important
 }
+#crew {
+  margin-top: 10vh;
+}
 // This just wouldnt work with tailwind 
 .non-contact {
   position: absolute;

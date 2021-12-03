@@ -10,7 +10,7 @@ import sample from "../public/carWork/sexyengine.jpg";
 import { title } from "process";
 export const Services = (props: any) => {
   const [catagory, setCatagory] = useState("base");
-  const [active, setActive] = useState(0);
+  const [activeService, setActive] = useState(0);
   let displayWork = [
     { image: powerstroke1, type: "powerstroke" },
     { image: gas1, type: "gas" },
@@ -73,25 +73,25 @@ export const Services = (props: any) => {
           Brake Service
         </div>
       </div>
-      <p className={active === 1 ? "text-center" : "hidden"}>
+      <p className={activeService === 1 ? "text-center" : "hidden"}>
         Additional information about powerstrokes
       </p>
-      <p className={active === 2 ? "text-center" : "hidden"}>
+      <p className={activeService === 2 ? "text-center" : "hidden"}>
         Additional information about Gas engines
       </p>
-      <p className={active === 3 ? "text-center" : "hidden"}>
+      <p className={activeService === 3 ? "text-center" : "hidden"}>
         Additional information about Steering systems
       </p>
-      <p className={active === 4 ? "text-center" : "hidden"}>
+      <p className={activeService === 4 ? "text-center" : "hidden"}>
         Additional information about Differentials
       </p>
-      <p className={active === 5 ? "text-center" : "hidden"}>
+      <p className={activeService === 5 ? "text-center" : "hidden"}>
         Additional information about Diesel engines
       </p>
-      <p className={active === 6 ? "text-center" : "hidden"}>
+      <p className={activeService === 6 ? "text-center" : "hidden"}>
         Additional information about Brakes
       </p>
-      <div className="flex  " id="crew"> 
+      <div className="flex  " > 
         {displayWork
           .filter((displayWork) => displayWork.type === catagory)
           .map((displayWork) => (
