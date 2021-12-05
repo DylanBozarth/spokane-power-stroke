@@ -9,6 +9,8 @@ const Home: NextPage = () => {
         <title>Spokane Power Stroke</title>
         <meta name="description" content="Spokane Power Stroke" />
         <link rel="icon" href="/assets/logonew.png" />
+        
+    
       </Head>
 
       
