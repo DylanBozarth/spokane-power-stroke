@@ -4,15 +4,12 @@ import { gsap} from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 export const Contact = (props: any) => {
   gsap.registerPlugin(ScrollTrigger);
- 
-  const NavBarChange = () => {
-    ScrollTrigger.create({
-      trigger: ".contact",
-     
-    });
-  }
+ const enter = () => {
+   console.log('enter')
+ }
+   
   useEffect(() => {
-    NavBarChange()
+    
   })
   return (
     <div className="contact">
