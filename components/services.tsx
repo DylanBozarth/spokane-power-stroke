@@ -102,7 +102,7 @@ export const Services = (props: any) => {
               <br />
               <Image
                 src={displayWork.image}
-              
+              layout="responsive"
                 alt="powerstroke"
                 className=""
                 placeholder="blur"
