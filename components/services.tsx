@@ -93,7 +93,7 @@ export const Services = (props: any) => {
       <p className={activeService === 6 ? "text-center" : "hidden"}>
       We also service brakes all makes and models.
       </p>
-      <div className=" w-100 md:w-75" > 
+      <div className=" w-100 md:w-75 m-auto" > 
         {displayWork
           .filter((displayWork) => displayWork.type === catagory)
           .map((displayWork) => (
