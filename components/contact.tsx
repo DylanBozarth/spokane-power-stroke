@@ -20,10 +20,10 @@ const resetTheBar = () => {
   return (
     <div className="contact">
 <div className="text-center font-bold">
-<FontAwesomeIcon icon={faPhone} /> (509) 879-0391 
+ (509) 879-0391 
 <br /> 
- <FontAwesomeIcon icon={faMapMarker} /> 2833 N Pittsburg St, Spokane, WA 99207
-<br /> <FontAwesomeIcon icon={faEnvelope} /> Spokanepowerstroke@gmail.com</div>
+ 2833 N Pittsburg St, Spokane, WA 99207
+<br />  Spokanepowerstroke@gmail.com</div>
       <div className="mapContainer">
       <iframe
         loading="lazy"
