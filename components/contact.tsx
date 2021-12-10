@@ -36,16 +36,16 @@ const resetTheBar = () => {
   height: 100%;
 } */
   return (
-    <div className="relative w-full h-full  inset-0">
+    <div className="w-full h-full  inset-0">
 <div className="text-center font-bold">
  (509) 879-0391 
 <br /> 
  2833 N Pittsburg St, Spokane, WA 99207
 <br />  Spokanepowerstroke@gmail.com</div>
-      <div className="w-100 md:w-75 m-auto">
+      <div className="">
       <iframe
         loading="lazy"
-        className="map"
+        className="w-full h-1/2"
         src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ98syR9EYnlQRSH85A1eUgVM&key=AIzaSyB9sySkqSx67a7l8pEhGxlxxLdP2hcnpWY"
       ></iframe> </div> 
     </div>
