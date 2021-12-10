@@ -20,24 +20,3 @@ body::-webkit-scrollbar {
 .stayontop {
   z-index: 99 !important
 }
-
-// This just wouldnt work with tailwind 
-.non-contact {
-  position: absolute;
-}
-.mapContainer {
-  position: relative;
-  overflow: hidden;
-  width: 100vw;
-  height: 50vh;
-}
-
-.map {
- position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
