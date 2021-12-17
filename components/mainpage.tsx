@@ -17,7 +17,7 @@ export const MainPage = (props: any) => {
       <div className="py-9"> 
         <div className="non-contact">
         <div className="flex justify-center"  id="services">
-        <Image src={Logo} className="justify-center"  alt="spokane power stroke" /></div>
+        <Image src={Logo} className="justify-center"  loading="eager"   alt="spokane power stroke" /></div>
         <h1 className="text-center px-5 text-xl  bg-blue-500 text-white  m-2">
           Having any of these problems?{" "}
         </h1>
