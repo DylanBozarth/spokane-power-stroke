@@ -1,4 +1,1 @@
-
-Polish it all 
-scroll activations 
-make images good
+Spokane power stroke, a front end Next.js application. 

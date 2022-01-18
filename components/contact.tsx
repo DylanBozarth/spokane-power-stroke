@@ -16,25 +16,6 @@ export const Contact = (props: any) => {
 const resetTheBar = () => {
   props.setActive(3)
 }
-/* .non-contact {
-  position: absolute;
-}
-.mapContainer {
-  position: relative;
-  overflow: hidden;
-  width: 100vw;
-  height: 50vh;
-}
-
-.map {
- position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-} */
   return (
     <div className="w-full h-full  inset-0">
 <div className="text-center font-bold">
@@ -52,3 +33,4 @@ const resetTheBar = () => {
   );
 };
 // When we are open and not
+// 7 to 5 M-F
