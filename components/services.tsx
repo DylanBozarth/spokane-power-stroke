@@ -106,6 +106,7 @@ export const Services = (props: any) => {
                 alt="powerstroke"
                 className=""
                 placeholder="blur"
+                
               />
             </div>
           ))}

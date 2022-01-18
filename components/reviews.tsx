@@ -75,7 +75,7 @@ export const Reviews = (props: any) => {
       <div>
         {items.slice(1, 4).map(({ Customer, desc }) => {
           return (
-            <div key={Customer} className="container mx:auto text-center px-1 ">
+            <div key={Customer} className="container justify-center items-center text-center px-1 m-auto ">
               <Image src={stars} alt="powerstroke" />
               <h4 className="font-sans text-large">{Customer}</h4>
               <p className="font-serif">{desc}</p>
@@ -99,8 +99,8 @@ export const Reviews = (props: any) => {
         </div>{" "}
         {items.map(({ Customer, desc }) => {
           return (
-            <div key={Customer} className="container mx:auto text-center px-1 ">
-              <Image src={stars} alt="" />
+            <div key={Customer} className="container mx:auto text-center px-1   justify-center items-center text-center ">
+              <Image src={stars} loading={"eager"} alt="" />
               <h4 className="font-sans text-large">{Customer}</h4>
               <p className="font-serif">{desc}</p>
             </div>
