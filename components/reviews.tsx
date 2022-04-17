@@ -72,11 +72,11 @@ export const Reviews = (props: any) => {
 
   if (open === false) {
     return (
-      <div>
+      <div className="container-fluid text-center ">
         {items.slice(1, 4).map(({ Customer, desc }) => {
           return (
-            <div key={Customer} className="container-fluid text-center px-1 m-auto ">
-              <Image src={stars} alt="powerstroke" />
+            <div key={Customer} >
+              <Image src={stars} alt="powerstroke" className="text-center" />
               <h4 className="font-sans text-large">{Customer}</h4>
               <p className="font-serif">{desc}</p>
             </div>
