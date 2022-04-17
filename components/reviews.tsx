@@ -72,7 +72,7 @@ export const Reviews = (props: any) => {
 
   if (open === false) {
     return (
-      <div className="container-fluid text-center ">
+      <div className=" centerit">
         {items.slice(1, 4).map(({ Customer, desc }) => {
           return (
             <div key={Customer} >
