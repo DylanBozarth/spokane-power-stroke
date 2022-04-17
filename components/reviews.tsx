@@ -75,7 +75,7 @@ export const Reviews = (props: any) => {
       <div className=" centerit">
         {items.slice(1, 4).map(({ Customer, desc }) => {
           return (
-            <div key={Customer} >
+            <div key={Customer} className="text-center">
               <Image src={stars} alt="powerstroke" className="text-center" />
               <h4 className="font-sans text-large">{Customer}</h4>
               <p className="font-serif">{desc}</p>
