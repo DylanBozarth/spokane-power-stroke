@@ -72,13 +72,15 @@ export const Reviews = (props: any) => {
 
   if (open === false) {
     return (
-      <div className=" centerit">
-        {items.slice(1, 4).map(({ Customer, desc }) => {
+      <div className="">
+        {items.slice(0, 3).map(({ Customer, desc }) => {
           return (
-            <div key={Customer} className="text-center">
-              <Image src={stars} alt="powerstroke" className="text-center" />
+            <div key={Customer} className="flex px-9">
+              <div className="w-screen px-9">
+              <Image src={stars} alt="powerstroke" className="" />
               <h4 className="font-sans text-large">{Customer}</h4>
               <p className="font-serif">{desc}</p>
+              </div>
             </div>
           );
         })}
@@ -99,10 +101,12 @@ export const Reviews = (props: any) => {
         </div>{" "}
         {items.map(({ Customer, desc }) => {
           return (
-            <div key={Customer} className="container-fluid text-center px-1 m-auto ">
-              <Image src={stars} loading={"eager"} alt="" />
+            <div key={Customer} className="flex px-9">
+              <div className="w-screen px-9">
+              <Image src={stars} alt="powerstroke" className="" />
               <h4 className="font-sans text-large">{Customer}</h4>
               <p className="font-serif">{desc}</p>
+              </div>
             </div>
           );
         })}
